@@ -1,0 +1,27 @@
+<!doctype html>
+<html >
+<head>
+<script type="text/javascript">
+	function submitForm(){
+	var	xhr = new XMLHttpRequest();	
+	xhr.onreadystatechange = function (){
+		if (xhr.readyState == 4)
+		{
+			if (xhr.status == 200)
+			{
+				document.getElementById("dyn").innerHTML =  xhr.responseText;
+			}
+			else
+			console.log("file or page not found");
+		}
+	};
+	xhr.open("GET", "ajax.txt", true);
+	xhr.send();
+	}
+</script>
+</head>
+<body>
+	<p id="dyn"></p>
+	<input type="submit" value="submit" onclick="submitForm()">
+</body>
+</html>
