@@ -5,22 +5,10 @@ namespace CollectionClass
 {
     public class Store : IEquatable<Store>
     {
-        public int storeId {get; set;}
-        public string storeEmp {get; set;}
+        public int storeId;
+        public string storeEmp;
 
-        public override bool Equals(Object obj)
-        {
-            if (obj == null)
-            {
-                return false;
-            }
-            Store str = (Store) obj;
-            if (str == null)
-            {
-                return false;
-            }
-            else return Equals(str); 
-    }
+       
     public override string ToString()
         {
         return "ID: " + storeId + "EMP: "+ storeEmp;
@@ -53,7 +41,7 @@ namespace CollectionClass
         }
         Console.WriteLine("Contains: " + list.Contains(new Store{ storeId = 105, storeEmp ="" }));
 			Console.WriteLine("Find employee Name:"  + list.Find( a => a.storeEmp.Contains("ismail")));
-			Console.WriteLine("Find Emp Id:"+ list.Exists(b => b.storeId == 105));
+			Console.WriteLine("Find Emp Id:"+ list.Exists(b => b.storeId == 104));
     }
 }
 }
