@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
 <body>
-
-
-<h4 id="demo" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()">Mouse over me</h4>
+<h3 id="demo" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()" onmouseover="mouseover()">Mouse over me</h3>
+<h4 id="demo1" onmouseenter="mouseEnter()" onmouseover="mouseover()">Mouse over me</h4>
 
 <script>
 function mouseEnter() {
   document.getElementById("demo").style.color = "red";
 }
+function mouseEnter() {
+  document.getElementById("demo1").style.color = "red";
+}
 
 function mouseLeave() {
   document.getElementById("demo").style.color = "black";
+}
+function mouseover() {
+  document.getElementById("demo").style.color = "yellow";
 }
 </script>
 
