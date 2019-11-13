@@ -1,0 +1,36 @@
+<html >
+
+ <body>
+  FirstName: <input type="text" id="fname"/><br/>
+  LastName: <input type="text" id="lname"/><br/>
+  Age      :  <input type="date" id="age"/><br/>
+     <table>
+    <tr>
+        <td>Filename to Save As:</td>
+        <td><input id="inputFileNameToSaveAs"></input></td>
+        <td><button onclick="saveTextAsFile()">Save Text to File</button></td>
+    </tr>
+</table>
+<script type="text/javascript">
+function saveTextAsFile()
+{
+    var textToSave = [ document.getElementById("fname").value+"&"+
+	                                document.getElementById("lname").value+"&"+
+									document.getElementById("age").value		];
+	  
+    var task = new Blob([textToSave], {type:"text/plain"});
+    var textToSaveAsURL = window.URL.createObjectURL(task);
+    var fileNameToSaveAs = document.getElementById("inputFileNameToSaveAs").value;
+ 
+    var downloadLink = document.createElement("a");
+    downloadLink.download = fileNameToSaveAs;
+    downloadLink.innerHTML = "Download File";
+    downloadLink.href = textToSaveAsURL;
+    downloadLink.style.display = "none";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+}
+
+</script>
+ </body>
+</html>

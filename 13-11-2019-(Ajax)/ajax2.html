@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<p id="demo">XML httpRequest</p>
+
+<button type="button" onclick="myFunction()">Change Content</button>
+
+<script>
+function myFunction() {
+  var     xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      document.getElementById("demo").innerHTML = xhttp.responseText;
+    }
+  };
+  xhr.addEventListener("progress",updateProgress);
+  xhr.addEventListener("load",updateLoad);
+  xhr.addEventListener("error",updateError);
+  xhr.addEventListener("abort",updateAbort);
+  xhttp.open("GET", "ajax.txt", true);
+  xhttp.send();
+}
+function updateProgress()
+{
+	Console.log("link is in progress");
+	}
+	function updateLoad()
+{
+	Console.log("link is  loding");
+	}
+	function updateError()
+{
+	Console.log("link is  error");
+	}
+	function updateAbort()
+{
+	Console.log("link is  abort");
+	}
+	
+</script>
+
+</html>
