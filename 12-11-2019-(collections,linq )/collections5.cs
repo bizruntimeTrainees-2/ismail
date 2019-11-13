@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Collections;
 namespace CollectionsSL
 {
-    public class Sortedlist
+    public class HashTable
     {
         public static void Main(string[] args)
         {
