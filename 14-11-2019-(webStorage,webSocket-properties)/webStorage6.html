@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<h3>You might want to open this page in two browser windows to test the code below.</h3>
+<script>
+window.onstorage = (event) => {
+  if (event.key != 'now') return;
+  alert(event.key + ':' + event.newValue + " at " + event.url);
+};
+
+localStorage.setItem('now', Date.now());
+</script>

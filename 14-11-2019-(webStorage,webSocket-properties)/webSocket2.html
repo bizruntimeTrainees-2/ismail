@@ -1,0 +1,21 @@
+<!doctype html>
+<script>
+let socket = new WebSocket("https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API");//url just taken for use
+socket.onopen= function(e){
+	alert("[open] connection established"+e.message);
+	alert("sending to the sever");
+	socket.send("hello from ismail");
+	};
+socket.onmessage = function(e){
+	alert("[message] data received"+e.message);
+	};
+	socket.onerror = function(e){
+		alert("[error] websocket error occured"+e.message);
+		socket.onclose= function(event){
+			if (event.wasClean)
+			{
+				alert("[close] connection closed"+event.code+" "+event.reason);
+			}
+			else
+			 alert("connection died");
+</script>

@@ -1,0 +1,52 @@
+<html >
+ <head>
+ <style>
+ h3{color: red;} 
+ </style>
+ </head>
+ <body  onunload="alert('your leaving the page')">
+ <h3>HTML Web Storage</h3>
+ <div>
+	<textarea id="text-field"  cols="20" rows="5" style="background-color:powderblue;color:red"></textarea>
+ </div>
+  <div>
+	<button id="submit" style="background-color:blue;">submit</button>
+	<button id="clear" style=" background-color:red;">Clear all</button>
+  </div>
+ </body>
+ <script>
+const textValue = document.querySelector('#text-field');
+const submit = document.querySelector('#submit');
+const clear = document.querySelector('#clear');
+
+function saveText() {
+  sessionStorage.setItem('Text',textValue.value);
+}
+
+function clearText() 
+{
+  textValue.value = '';
+  sessionStorage.clear();
+}
+
+if (window.sessionStorage)
+{
+  try {
+    textValue.addEventListener('keyup',saveText);
+  }
+  catch (e)
+  {
+    if (e == QUOTA_EXCEEDED_ERR) {
+      alert('Storage limit exceeded');
+    }
+  }
+  if (sessionStorage.getItem('Text')) {
+    textValue.value = sessionStorage.getItem('Text');
+  }
+} else {
+  console.log('No session storage support');
+}
+clear.addEventListener('click', clearText);
+submit.addEventListener('click', clearText);
+ </script>
+</html>

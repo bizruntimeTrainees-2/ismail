@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<h2>we are storing string and reading string</h2>
+<script>
+sessionStorage.user = JSON.stringify({name: "ismail"});
+
+let user = JSON.parse( sessionStorage.user );
+alert( user.name ); 
+</script>

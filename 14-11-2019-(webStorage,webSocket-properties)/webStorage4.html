@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<h3>Getting info through key</h3>
+<script>
+let keys = Object.keys(localStorage);
+for(let key in keys)
+{
+  alert(key+":"+ localStorage.getItem(key));
+}
+</script>
