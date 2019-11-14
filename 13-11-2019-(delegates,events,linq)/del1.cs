@@ -9,15 +9,15 @@ public class Test
 
    public  static void Main(string[] args)
     {
-        TestDelegate testDelA = new TestDelegate(M);
+        TestDelegate testA = new TestDelegate(M);
 
-        TestDelegate testDelB = delegate(string s) { Console.WriteLine(s); };
+        TestDelegate testB = delegate(string s) { Console.WriteLine(s); };
 
-        TestDelegate testDelC = (x) => { Console.WriteLine(x); };
+        TestDelegate testC = (x) => { Console.WriteLine(x); };
 
-        testDelA("Hello. My name is M and I write lines.");
-        testDelB("That's nothing. I'm anonymous and ");
-        testDelC("I'm a famous author.");
+        testA("Hello. My name is M and I write lines.");
+        testB("That's nothing. I'm anonymous and ");
+        testC("I'm a famous author.");
 
         Console.WriteLine();
        
