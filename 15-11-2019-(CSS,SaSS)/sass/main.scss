@@ -18,7 +18,11 @@
     }
 }
     
-
+@mixin mobile{
+    @media (max-width: $mobile){
+        @content;
+    }
+}
 body{
     background:  $primary-color ;
     color: $text-color;
@@ -26,15 +30,19 @@ body{
 }
 .main_p{
     @include flexCenter(row);
-    width: 80%;
+    width: 80% - 40%;
     margin: 0 auto; 
     
-    #{&}_p{
-        font-weight: weight(reguboldlar);
+    #{&}_p1{
+        font-weight: weight(bold);
 
         &:hover{
             color: pink;
         }
+    }
+    
+    @include mobile{
+        flex-direction: column;
     }
 }
 .light{

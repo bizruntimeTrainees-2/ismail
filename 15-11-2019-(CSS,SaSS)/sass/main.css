@@ -14,11 +14,19 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  width: 80%;
+  width: 40%;
   margin: 0 auto;
 }
-.main_p .main_p_p:hover {
+.main_p .main_p_p1 {
+  font-weight: 700;
+}
+.main_p .main_p_p1:hover {
   color: pink;
+}
+@media (max-width: 800px) {
+  .main_p {
+    flex-direction: column;
+  }
 }
 
 .light {
