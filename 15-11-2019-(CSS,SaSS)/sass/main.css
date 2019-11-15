@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: blue;
+  color: yellow;
+}
+
+.main_p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+}
+.main_p .main_p_p:hover {
+  color: pink;
+}
+
+.light {
+  background: white;
+  color: black;
+}
+
+/*# sourceMappingURL=main.css.map */
