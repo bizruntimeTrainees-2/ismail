@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Stop spinning</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div {
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  font-size: 15rem;
+}
+  </style>
+ </head>
+ <body>
+   <div>↻</div><br/>
+   <div>
+	<input type="button" value="Stop Animation" onclick="CancelAnimation()">
+   </div>
+ </body>
+ <script>
+   const spinner = document.querySelector('div');
+      let rotateCount = 0;
+      let startTime = null;
+      let rAF;
+ 
+	   function draw(timestamp) {
+        if(!startTime) {
+         startTime = timestamp;
+        }
+        rotateCount = (timestamp - startTime) / 3;
+        
+        if(rotateCount > 359) {
+          rotateCount %= 360;
+        }
+
+		spinner.style.transform = 'rotate(' + rotateCount + 'deg)';
+       
+        rAF = requestAnimationFrame(draw);
+      }
+      draw();
+	  function CancelAnimation(){
+		  cancelAnimationFrame(rAF);
+		  }
+ </script>
+</html>
