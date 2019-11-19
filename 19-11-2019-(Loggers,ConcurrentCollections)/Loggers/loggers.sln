@@ -7,6 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "loggers", "loggers\loggers.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{544D8CA3-04CA-4B06-8E33-7EB04F62695F}"
 	ProjectSection(SolutionItems) = preProject
+		Counter.cs = Counter.cs
 		Loghelper.cs = Loghelper.cs
 	EndProjectSection
 EndProject
