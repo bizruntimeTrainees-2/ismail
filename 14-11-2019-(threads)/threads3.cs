@@ -1,13 +1,12 @@
 using System;
 using System.Threading;
-using System.Diagnostics;
-public class T
+public class Threads
 {
 	
-	public static void Main()
+	public static void Main(string[] args)
 	{
 	
-		var th = new Thread(ExecuteInForeground);
+		Thread th = new Thread(ExecuteInForeground);
 		th.Start(5000);
 		Thread.Sleep(10);
 		
@@ -30,13 +29,6 @@ public class T
 		Console.WriteLine("foreground thread status: "+Thread.CurrentThread.ManagedThreadId+" "+
 						 Thread.CurrentThread.ThreadState+" "+
 						 Thread.CurrentThread.Priority);
-		DateTime start = new DateTime();
-		var sw = Stopwatch.StartNew();
-		do{
-		Console.WriteLine("time "+sw.ElapsedMilliseconds);
-		Thread.Sleep(5);
-      } while (sw.ElapsedMilliseconds <= time);
-      sw.Stop(); 
 	}
 }
 

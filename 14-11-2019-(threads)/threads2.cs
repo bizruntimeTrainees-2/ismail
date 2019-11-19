@@ -1,13 +1,13 @@
 using System;
 using System.Threading;
 
-public class T
+public class Threads
 {
 	
-	public static void Main()
+	public static void Main(string[] args)
 	{
 	
-		var th = new Thread(ExecuteInForeground);
+		Thread th = new Thread(ExecuteInForeground);
 		th.Start();
 		Thread.Sleep(10);
 		

@@ -1,8 +1,7 @@
 using System;
 using System.Threading;
 
-
-public class T
+public class Threads
 {
 	 static void T1(Object state)
 	{	
@@ -11,7 +10,7 @@ public class T
 			Console.WriteLine("this is from thread pool "+i);		
 		 }
 	}
-	public static void Main()
+	public static void Main(string[] args)
 	{
 		Console.WriteLine("Main thread start:");
 		ThreadPool.QueueUserWorkItem(T1);
