@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+$(document).ready(function(){
+  $("#flip1").click(function(){
+    $("#panel1").slideUp("slow");
+  });
+});
+$(document).ready(function(){
+  $("#flip2").click(function(){
+    $("#panel2").slideToggle("slow");
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: lightgreen;
+  border: solid 1px ;
+}
+
+#panel {
+  padding: 15px;
+  display: none;
+  background-color: lightgreen;
+}
+</style>
+</head>
+<body>
+ 
+<div id="flip">Click to slide down </div><br/>
+<div id="panel">Hello to all</div><br/>
+<div id="flip1" >Click to slide UP </div><br/>
+<div id="panel1" >Hello to all</div><br/>
+
+<div id="flip2">Click to slide Toggile </div><br/>
+<div id="panel2">Hello to all</div><br/>
+
+</body>
+</html>
