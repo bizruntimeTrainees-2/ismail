@@ -1,0 +1,11 @@
+E:\C-sharp\FileHandling\FileHandling_Append\FileHandling_Append\bin\Debug\netcoreapp3.0\FileHandling_Append.exe
+E:\C-sharp\FileHandling\FileHandling_Append\FileHandling_Append\bin\Debug\netcoreapp3.0\FileHandling_Append.deps.json
+E:\C-sharp\FileHandling\FileHandling_Append\FileHandling_Append\bin\Debug\netcoreapp3.0\FileHandling_Append.runtimeconfig.json
+E:\C-sharp\FileHandling\FileHandling_Append\FileHandling_Append\bin\Debug\netcoreapp3.0\FileHandling_Append.runtimeconfig.dev.json
+E:\C-sharp\FileHandling\FileHandling_Append\FileHandling_Append\bin\Debug\netcoreapp3.0\FileHandling_Append.dll
+E:\C-sharp\FileHandling\FileHandling_Append\FileHandling_Append\bin\Debug\netcoreapp3.0\FileHandling_Append.pdb
+E:\C-sharp\FileHandling\FileHandling_Append\FileHandling_Append\obj\Debug\netcoreapp3.0\FileHandling_Append.csprojAssemblyReference.cache
+E:\C-sharp\FileHandling\FileHandling_Append\FileHandling_Append\obj\Debug\netcoreapp3.0\FileHandling_Append.AssemblyInfoInputs.cache
+E:\C-sharp\FileHandling\FileHandling_Append\FileHandling_Append\obj\Debug\netcoreapp3.0\FileHandling_Append.AssemblyInfo.cs
+E:\C-sharp\FileHandling\FileHandling_Append\FileHandling_Append\obj\Debug\netcoreapp3.0\FileHandling_Append.dll
+E:\C-sharp\FileHandling\FileHandling_Append\FileHandling_Append\obj\Debug\netcoreapp3.0\FileHandling_Append.pdb
