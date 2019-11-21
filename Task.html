@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Form Creation</title>
+  </head>
+ <body >   
+  <ul>
+  <div class="container-fluid">   
+  
+ <li> <b-tab type="button" class="btn btn-primary pd:10px" data-toggle="collapse" data-target="#demo1">Curds</b-tab>&nbsp;&nbsp;</li>
+  <div id="demo1" class="collapse">
+    <div>
+      <b-button-toolbar aria-label="Toolbar with button groups and input groups" pills>  
+        <b-button-group size="sm" class="mr-1">
+          <b-button class="bg-primary" href="#">Get</b-button>
+          <b-button class="btn-sm bg-light" onclick="addText()"><a href="#">+</a></b-button>
+          <span id="add"></span>
+          <input type="text"/>
+          <input type="submit" class="bg-danger"onclick="SendRequest()"/>
+        </b-button-group>
+    </b-button-toolbar> 
+  </div>
+  <div>
+      <b-button-toolbar aria-label="Toolbar with button groups and input groups" pills>  
+        <b-button-group size="sm" class="mr-1">
+          <b-button class="bg-primary" href="#"onclick="Post()">Post</b-button>
+          <input type="text"/>
+          <input type="submit" class="bg-danger"/>
+        </b-button-group>
+  </div>     
+  <div>
+      <b-button-toolbar aria-label="Toolbar with button groups and input groups" pills>  
+        <b-button-group size="sm" class="mr-1">
+          <b-button class="bg-primary" href="#" onclick="PostForm()">Post Form Data</b-button>
+          <b-button class="btn-sm bg-light" onclick="addText1()"><a href="#">+</a></b-button>
+          <span id="add1"></span>
+          <input type="text"/>
+          <input type="submit" class="bg-danger"/>
+        </b-button-group>
+  </div>     
+  <div>
+      <b-button-toolbar aria-label="Toolbar with button groups and input groups" pills>  
+        <b-button-group size="sm" class="mr-1">
+          <b-button class="bg-primary" href="#" onclick="Put()">Put</b-button>
+          <input type="text"/>
+          <input type="submit" class="bg-danger"/>
+        </b-button-group>
+  </div>     
+  <div>
+      <b-button-toolbar aria-label="Toolbar with button groups and input groups" pills>  
+        <b-button-group size="sm" class="mr-1">
+          <b-button class="bg-primary" href="#" onclick="Patch()">PATCH</b-button>
+          <input type="text"/>
+          <input type="submit" class="bg-danger"/>
+        </b-button-group>
+  </div>     
+    <div>
+      <b-button-toolbar aria-label="Toolbar with button groups and input groups" pills>  
+        <b-button-group size="sm" class="mr-1">
+          <b-button class="bg-primary" href="#" onclick="Delete()">Delete</b-button>
+          <input type="text"/>
+          <input type="submit" class="bg-danger"/>
+        </b-button-group>
+    </div>     
+    </b-button-toolbar>       
+  </div>
+
+ <li><b-tab type="button" class="btn btn-primary pd:10px" data-toggle="collapse" data-target="#demo2">Headers</b-tab>&nbsp;&nbsp;</li> 
+  <div id="demo2" class="collapse">
+      <div>
+          <b-button-toolbar aria-label="Toolbar with button groups and input groups" pills>  
+            <b-button-group size="sm" class="mr-1">
+              <b-button class="bg-primary" href="#" >Request Header</b-button>
+              <input type="text"/>
+              <input type="submit" class="bg-danger"/>
+            </b-button-group>
+        </b-button-toolbar> 
+      </div>
+      <div>
+          <b-button-toolbar aria-label="Toolbar with button groups and input groups" pills>  
+            <b-button-group size="sm" class="mr-1">
+              <b-button class="bg-primary" href="#" >Response Header</b-button>
+              <input type="text" />
+              <input type="submit" class="bg-danger"/>
+            </b-button-group>
+        </b-button-toolbar> 
+      </div>
+    </div>
+  <li>  <b-tab type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo3">Authentication</b-tab></li>
+    <div id="demo3" class="collapse">
+        <li><b-tab  type="button" class="btn-sm text-primary" data-toggle="collapse" data-target="#demo4"><a href="#">Basic Auth </a></b-tab> </li>
+    </div>
+    <div id="demo4" class="collapse">
+        <li>UserName:<input type="password" class="btn-sm" role="button"/></li>
+        <li>Password<input type="text" class="btn-sm" role="button"/></li>
+        <li><input type="submit" class="btn-sm btn-primary" onclick="SendData()"/></li>
+      </div>
+ </div>
+    
+   </ul>
+    <div id="show"></div>              
+                                            
+                       
+                                  
+      <script >
+        function SendRequest()
+        {
+          var  xhr = new XMLHttpRequest();
+          xhr.onreadystatechange=function(){
+            if(xhr.status==200&& xhr.readyState==4)
+            {
+              document.getElementById("show").innerHTML = xhr.responseText;
+            }
+          };
+          xhr.open("GET","get?foo1=bar1",true);
+          xhr.send();
+        }
+      function addText()
+      {
+        
+        var element = document.createElement("input");
+        element.setAttribute("type","text");
+         var add = document.getElementById("add");
+         add.appendChild(element);       
+      }
+      function addText1()
+      {
+        
+        var element = document.createElement("input");
+        element.setAttribute("type","text");
+         var add1 = document.getElementById("add1");
+         add1.appendChild(element);       
+      }
+      </script>    
+                     
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+  
