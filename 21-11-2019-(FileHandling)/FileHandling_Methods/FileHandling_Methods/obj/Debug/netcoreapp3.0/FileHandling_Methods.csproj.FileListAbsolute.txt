@@ -1,0 +1,11 @@
+E:\C-sharp\FileHandling\FileHandling_Methods\FileHandling_Methods\bin\Debug\netcoreapp3.0\FileHandling_Methods.exe
+E:\C-sharp\FileHandling\FileHandling_Methods\FileHandling_Methods\bin\Debug\netcoreapp3.0\FileHandling_Methods.deps.json
+E:\C-sharp\FileHandling\FileHandling_Methods\FileHandling_Methods\bin\Debug\netcoreapp3.0\FileHandling_Methods.runtimeconfig.json
+E:\C-sharp\FileHandling\FileHandling_Methods\FileHandling_Methods\bin\Debug\netcoreapp3.0\FileHandling_Methods.runtimeconfig.dev.json
+E:\C-sharp\FileHandling\FileHandling_Methods\FileHandling_Methods\bin\Debug\netcoreapp3.0\FileHandling_Methods.dll
+E:\C-sharp\FileHandling\FileHandling_Methods\FileHandling_Methods\bin\Debug\netcoreapp3.0\FileHandling_Methods.pdb
+E:\C-sharp\FileHandling\FileHandling_Methods\FileHandling_Methods\obj\Debug\netcoreapp3.0\FileHandling_Methods.csprojAssemblyReference.cache
+E:\C-sharp\FileHandling\FileHandling_Methods\FileHandling_Methods\obj\Debug\netcoreapp3.0\FileHandling_Methods.AssemblyInfoInputs.cache
+E:\C-sharp\FileHandling\FileHandling_Methods\FileHandling_Methods\obj\Debug\netcoreapp3.0\FileHandling_Methods.AssemblyInfo.cs
+E:\C-sharp\FileHandling\FileHandling_Methods\FileHandling_Methods\obj\Debug\netcoreapp3.0\FileHandling_Methods.dll
+E:\C-sharp\FileHandling\FileHandling_Methods\FileHandling_Methods\obj\Debug\netcoreapp3.0\FileHandling_Methods.pdb

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "FileHandling_Directory_Copy/1.0.0": {
+        "runtime": {
+          "FileHandling_Directory_Copy.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FileHandling_Directory_Copy/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

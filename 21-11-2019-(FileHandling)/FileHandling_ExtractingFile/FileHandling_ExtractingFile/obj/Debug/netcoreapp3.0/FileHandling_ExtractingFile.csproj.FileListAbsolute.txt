@@ -1,0 +1,11 @@
+E:\C-sharp\FileHandling\FileHandling_ExtractingFile\FileHandling_ExtractingFile\bin\Debug\netcoreapp3.0\FileHandling_ExtractingFile.exe
+E:\C-sharp\FileHandling\FileHandling_ExtractingFile\FileHandling_ExtractingFile\bin\Debug\netcoreapp3.0\FileHandling_ExtractingFile.deps.json
+E:\C-sharp\FileHandling\FileHandling_ExtractingFile\FileHandling_ExtractingFile\bin\Debug\netcoreapp3.0\FileHandling_ExtractingFile.runtimeconfig.json
+E:\C-sharp\FileHandling\FileHandling_ExtractingFile\FileHandling_ExtractingFile\bin\Debug\netcoreapp3.0\FileHandling_ExtractingFile.runtimeconfig.dev.json
+E:\C-sharp\FileHandling\FileHandling_ExtractingFile\FileHandling_ExtractingFile\bin\Debug\netcoreapp3.0\FileHandling_ExtractingFile.dll
+E:\C-sharp\FileHandling\FileHandling_ExtractingFile\FileHandling_ExtractingFile\bin\Debug\netcoreapp3.0\FileHandling_ExtractingFile.pdb
+E:\C-sharp\FileHandling\FileHandling_ExtractingFile\FileHandling_ExtractingFile\obj\Debug\netcoreapp3.0\FileHandling_ExtractingFile.csprojAssemblyReference.cache
+E:\C-sharp\FileHandling\FileHandling_ExtractingFile\FileHandling_ExtractingFile\obj\Debug\netcoreapp3.0\FileHandling_ExtractingFile.AssemblyInfoInputs.cache
+E:\C-sharp\FileHandling\FileHandling_ExtractingFile\FileHandling_ExtractingFile\obj\Debug\netcoreapp3.0\FileHandling_ExtractingFile.AssemblyInfo.cs
+E:\C-sharp\FileHandling\FileHandling_ExtractingFile\FileHandling_ExtractingFile\obj\Debug\netcoreapp3.0\FileHandling_ExtractingFile.dll
+E:\C-sharp\FileHandling\FileHandling_ExtractingFile\FileHandling_ExtractingFile\obj\Debug\netcoreapp3.0\FileHandling_ExtractingFile.pdb

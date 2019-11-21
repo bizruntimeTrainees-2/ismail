@@ -1,0 +1,11 @@
+E:\C-sharp\FileHandling\FileHandling_Methods_logFiles\FileHandling_Methods_logFiles\bin\Debug\netcoreapp3.0\FileHandling_Methods_logFiles.exe
+E:\C-sharp\FileHandling\FileHandling_Methods_logFiles\FileHandling_Methods_logFiles\bin\Debug\netcoreapp3.0\FileHandling_Methods_logFiles.deps.json
+E:\C-sharp\FileHandling\FileHandling_Methods_logFiles\FileHandling_Methods_logFiles\bin\Debug\netcoreapp3.0\FileHandling_Methods_logFiles.runtimeconfig.json
+E:\C-sharp\FileHandling\FileHandling_Methods_logFiles\FileHandling_Methods_logFiles\bin\Debug\netcoreapp3.0\FileHandling_Methods_logFiles.runtimeconfig.dev.json
+E:\C-sharp\FileHandling\FileHandling_Methods_logFiles\FileHandling_Methods_logFiles\bin\Debug\netcoreapp3.0\FileHandling_Methods_logFiles.dll
+E:\C-sharp\FileHandling\FileHandling_Methods_logFiles\FileHandling_Methods_logFiles\bin\Debug\netcoreapp3.0\FileHandling_Methods_logFiles.pdb
+E:\C-sharp\FileHandling\FileHandling_Methods_logFiles\FileHandling_Methods_logFiles\obj\Debug\netcoreapp3.0\FileHandling_Methods_logFiles.csprojAssemblyReference.cache
+E:\C-sharp\FileHandling\FileHandling_Methods_logFiles\FileHandling_Methods_logFiles\obj\Debug\netcoreapp3.0\FileHandling_Methods_logFiles.AssemblyInfoInputs.cache
+E:\C-sharp\FileHandling\FileHandling_Methods_logFiles\FileHandling_Methods_logFiles\obj\Debug\netcoreapp3.0\FileHandling_Methods_logFiles.AssemblyInfo.cs
+E:\C-sharp\FileHandling\FileHandling_Methods_logFiles\FileHandling_Methods_logFiles\obj\Debug\netcoreapp3.0\FileHandling_Methods_logFiles.dll
+E:\C-sharp\FileHandling\FileHandling_Methods_logFiles\FileHandling_Methods_logFiles\obj\Debug\netcoreapp3.0\FileHandling_Methods_logFiles.pdb
