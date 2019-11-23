@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.ajaxSetup({url: "ajax_demo.txt", success: function(result){
+      $("div").html(result);}});
+    $.ajax();
+  });
+});
+</script>
+</head>
+<body>
+
+<div><h2>change this text</h2></div>
+
+<button>Change Content</button>
+
+</body>
+</html>
