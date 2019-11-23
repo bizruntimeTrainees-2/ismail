@@ -1,0 +1,11 @@
+E:\C-sharp\FileHandling\IsolatedStorage\IsolatedStorage\bin\Debug\netcoreapp3.0\IsolatedStorage.exe
+E:\C-sharp\FileHandling\IsolatedStorage\IsolatedStorage\bin\Debug\netcoreapp3.0\IsolatedStorage.deps.json
+E:\C-sharp\FileHandling\IsolatedStorage\IsolatedStorage\bin\Debug\netcoreapp3.0\IsolatedStorage.runtimeconfig.json
+E:\C-sharp\FileHandling\IsolatedStorage\IsolatedStorage\bin\Debug\netcoreapp3.0\IsolatedStorage.runtimeconfig.dev.json
+E:\C-sharp\FileHandling\IsolatedStorage\IsolatedStorage\bin\Debug\netcoreapp3.0\IsolatedStorage.dll
+E:\C-sharp\FileHandling\IsolatedStorage\IsolatedStorage\bin\Debug\netcoreapp3.0\IsolatedStorage.pdb
+E:\C-sharp\FileHandling\IsolatedStorage\IsolatedStorage\obj\Debug\netcoreapp3.0\IsolatedStorage.csprojAssemblyReference.cache
+E:\C-sharp\FileHandling\IsolatedStorage\IsolatedStorage\obj\Debug\netcoreapp3.0\IsolatedStorage.AssemblyInfoInputs.cache
+E:\C-sharp\FileHandling\IsolatedStorage\IsolatedStorage\obj\Debug\netcoreapp3.0\IsolatedStorage.AssemblyInfo.cs
+E:\C-sharp\FileHandling\IsolatedStorage\IsolatedStorage\obj\Debug\netcoreapp3.0\IsolatedStorage.dll
+E:\C-sharp\FileHandling\IsolatedStorage\IsolatedStorage\obj\Debug\netcoreapp3.0\IsolatedStorage.pdb

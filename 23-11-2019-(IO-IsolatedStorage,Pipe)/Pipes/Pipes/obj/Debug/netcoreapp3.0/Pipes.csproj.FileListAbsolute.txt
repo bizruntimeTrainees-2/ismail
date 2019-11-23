@@ -1,0 +1,11 @@
+E:\C-sharp\FileHandling\Pipes\Pipes\bin\Debug\netcoreapp3.0\Pipes.exe
+E:\C-sharp\FileHandling\Pipes\Pipes\bin\Debug\netcoreapp3.0\Pipes.deps.json
+E:\C-sharp\FileHandling\Pipes\Pipes\bin\Debug\netcoreapp3.0\Pipes.runtimeconfig.json
+E:\C-sharp\FileHandling\Pipes\Pipes\bin\Debug\netcoreapp3.0\Pipes.runtimeconfig.dev.json
+E:\C-sharp\FileHandling\Pipes\Pipes\bin\Debug\netcoreapp3.0\Pipes.dll
+E:\C-sharp\FileHandling\Pipes\Pipes\bin\Debug\netcoreapp3.0\Pipes.pdb
+E:\C-sharp\FileHandling\Pipes\Pipes\obj\Debug\netcoreapp3.0\Pipes.csprojAssemblyReference.cache
+E:\C-sharp\FileHandling\Pipes\Pipes\obj\Debug\netcoreapp3.0\Pipes.AssemblyInfoInputs.cache
+E:\C-sharp\FileHandling\Pipes\Pipes\obj\Debug\netcoreapp3.0\Pipes.AssemblyInfo.cs
+E:\C-sharp\FileHandling\Pipes\Pipes\obj\Debug\netcoreapp3.0\Pipes.dll
+E:\C-sharp\FileHandling\Pipes\Pipes\obj\Debug\netcoreapp3.0\Pipes.pdb
