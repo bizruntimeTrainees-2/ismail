@@ -1,7 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -11,76 +14,80 @@
     <title>Form Creation</title>
   </head>
  <body >   
-  <ul>
-  <div class="container-fluid">   
+<div class="btn-toolbar">
+  <div class="container-fluid" >   
   
- <li> <b-tab type="button" class="btn btn-primary pd:10px" data-toggle="collapse" data-target="#demo1">Curds</b-tab>&nbsp;&nbsp;</li>
+  <b-tab type="button" class="btn btn-primary pd:10px" data-toggle="collapse" data-target="#demo1">Curds</b-tab>&nbsp;&nbsp;
   <div id="demo1" class="collapse">
-    <div>
-      <b-button-toolbar aria-label="Toolbar with button groups and input groups" >  
-        <b-button-group size="sm" class="mr-1">
+    <div id="text">
+      <button-toolbar aria-label="Toolbar with button groups and input groups" >  
+        <button-group size="sm" class="mr-1">
           <b-button class="bg-primary" href="#">Get</b-button>
-          <b-button class="btn-sm bg-light" onclick="addText()"><a href="#">+</a></b-button>
-          <span id="add"></span>
-          <input type="text"/>
-          <input type="submit" class="bg-danger"onclick="SendRequest()"/>
-        </b-button-group>
-    </b-button-toolbar> 
-  </div>
+          <button class="btn-sm bg-light" id="addButton">+</button>
+          <input type="text"  id="text1" placeholder="foo=bar"/>
+          <input type="text"  id="text2" placeholder="foo=bar"/>
+          <input type="submit"  class="bg-danger" onclick="SendRequest()"/>
+        </button-group>
+    </button-toolbar> 
+   </div>
   <div>
       <b-button-toolbar aria-label="Toolbar with button groups and input groups" >  
         <b-button-group size="sm" class="mr-1">
           <b-button class="bg-primary" href="#">Post</b-button>
-          <input type="text"/>
+          <input type="text" id="post" placeholder="post"/>
           <input type="submit" class="bg-danger" onclick="PostData()"/>
         </b-button-group>
       </b-button-toolbar>
   </div>     
-  <div>
+  <div id="postForm">
       <b-button-toolbar aria-label="Toolbar with button groups and input groups" >  
         <b-button-group size="sm" class="mr-1">
           <b-button class="bg-primary" href="#" >Post Form Data</b-button>
-          <b-button class="btn-sm bg-light" onclick="addText1()"><a href="#">+</a></b-button>
-          <span id="add1"></span>
-          <input type="text"/>
-          <input type="submit" class="bg-danger" onclick="PostFormData()"/>
+          <button class="btn-sm bg-light" id="addButtonP">+</button>
+          <input type="text" id="text1_1" placeholder="post form data"/>
+          <input type="text" id="text1_2" placeholder="post form data"/>
+          <input type="submit"  class="bg-danger" onclick="PostFormData()"/>
         </b-button-group>
+      </b-button-toolbar >
   </div>     
   <div>
       <b-button-toolbar aria-label="Toolbar with button groups and input groups" >  
         <b-button-group size="sm" class="mr-1">
           <b-button class="bg-primary" href="#" >Put</b-button>
-          <input type="text"/>
-          <input type="submit" class="bg-danger"onclick="Put()"/>
+          <input type="text" placeholder="put"/>
+          <input type="submit"id="put"  class="bg-danger" onclick="Put()"/>
         </b-button-group>
+      </b-button-toolbar >
   </div>     
   <div>
       <b-button-toolbar aria-label="Toolbar with button groups and input groups" >  
         <b-button-group size="sm" class="mr-1">
           <b-button class="bg-primary" href="#" >PATCH</b-button>
-          <input type="text"/>
-          <input type="submit" class="bg-danger"onclick="Patch()"/>
+          <input type="text" placeholder="patch"/>
+          <input type="submit" id="patch" class="bg-danger"onclick="Patch()"/>
         </b-button-group>
+      </b-button-toolbar >
   </div>     
     <div>
       <b-button-toolbar aria-label="Toolbar with button groups and input groups" >  
         <b-button-group size="sm" class="mr-1">
           <b-button class="bg-primary" href="#" >Delete</b-button>
-          <input type="text"/>
-          <input type="submit" class="bg-danger"onclick="Delete()"/>
+          <input type="text" placeholder="delete"/>
+          <input type="submit" id="delete" class="bg-danger"onclick="Delete()"/>
         </b-button-group>
-    </div>     
-    </b-button-toolbar>       
+      </b-button-toolbar >
+    </div>            
   </div>
-
- <li><b-tab type="button" class="btn btn-primary pd:10px" data-toggle="collapse" data-target="#demo2">Headers</b-tab>&nbsp;&nbsp;</li> 
+  </div>
+  <div class="container-fluid ">
+ <b-tab type="button" class="btn btn-primary pd:10px" data-toggle="collapse" data-target="#demo2">Headers</b-tab>&nbsp;&nbsp; 
   <div id="demo2" class="collapse">
       <div>
           <b-button-toolbar aria-label="Toolbar with button groups and input groups" >  
             <b-button-group size="sm" class="mr-1">
               <b-button class="bg-primary" href="#" >Request Header</b-button>
               <input type="text"/>
-              <input type="submit" class="bg-danger" onclick="RequestHeader()"/>
+              <input type="submit" id="header" class="bg-danger" onclick="RequestHeader()"/>
             </b-button-group>
         </b-button-toolbar> 
       </div>
@@ -94,32 +101,25 @@
         </b-button-toolbar> 
       </div>
     </div>
-  <li>  <b-tab type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo3">Authentication</b-tab></li>
+  </div>
+  <div class="container-fluid ">
+   <b-tab type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo3">Authentication</b-tab>
     <div id="demo3" class="collapse">
         <li><b-tab  type="button" class="btn-sm text-primary" data-toggle="collapse" data-target="#demo4"><a href="#">Basic Auth </a></b-tab> </li>
     </div>
     <div id="demo4" class="collapse">
-        <li>UserName:<input type="password" class="btn-sm" role="button"/></li>
-        <li>Password<input type="text" class="btn-sm" role="button"/></li>
+        <li>UserName:<input type="text" id="u" class="btn-sm" role="button" style="border-color:blue" placeholder="User Name"/></li>
+        <li>Password:<input type="password" id="p" class="btn-sm" role="button" style="border-color:blue" placeholder="password"></li>
         <li><input type="submit" class="btn-sm btn-primary" onclick="SendData()"/></li>
       </div>
  </div>
-    
-   </ul>
-   <div id="show">
+</div>
+   <div id="show" style="height: 200px; widows: 300px; border-block-color: red;">
    
     </div>                       
                                             
           
-    <script src=Get.js></script>              
-    <script src=PostFormData.js></script>              
-    <script src=PostData.js></script>              
-    <script src=Put.js></script>              
-    <script src=Patch.js></script>              
-    <script src=Delete.js></script>              
-               
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src=task.js></script>              
+    
   </body>
   

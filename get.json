@@ -1,7 +1,0 @@
-{
-    "args":{
-        "foo1":"data1",
-        "foo2":"data2"
-    },
-    "message":"Data From Get request"
-}
