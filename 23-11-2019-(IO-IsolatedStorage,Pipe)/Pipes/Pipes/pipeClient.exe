@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.IO.Pipes;
 using System.IO;
 namespace Pipes
@@ -18,14 +17,16 @@ namespace Pipes
                     using (StreamReader sr = new StreamReader(pipeClient))
                     {
                         string str;
-                        //waiting for SYNC mesage from server
+
+                        //waiting for input mesage from server
                         do
                         {
-                            Console.WriteLine("Client is waiting for SYNC");
+                            Console.WriteLine("Client is waiting for input");
                             str = sr.ReadLine();
                         }
                         while (!str.StartsWith("SYNC"));
                         //show the server data on the console
+
                         while((str= sr.ReadLine()) != null)
                         {
                             Console.WriteLine("Client :{0}",str);
