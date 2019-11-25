@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+ 
+ <body>
+ web Workers functions
+ setTimeout(), setInterval(), clearTimeout(), clearInterval
+  <button onclick="webw()">click me</button>
+ </body>
+ <script>
+ var alarm = function(){
+		 remaind: function(amsg){
+			 alert(amsg);
+			 this.TimeoutID = undefined;
+			 },
+		 setup: function()
+		 {
+				 if (	typeof this.TimeoutID ==="number")
+				 {
+					 this.cancel();
+				 }
+				 this.TimeoutID = window.setTimeout(function(msg){
+					 this.remaind(msg);
+					 }.bind(this), 1000, 'wake up');
+			},
+		cancel: function(){
+						 window.clearTimeout(this.TimeoutID);
+						 }
+			};
+
+	 window.onclick= function (){ 
+
+	     	 alarm.setup();
+		 };
+	
+ </script>
+</html>

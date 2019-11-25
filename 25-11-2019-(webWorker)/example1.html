@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+ <body>
+  <div id="results"></div>
+
+ <script language="javascript">
+var worker = new Worker("fibonanci.js");
+ // importScripts("fibananci.js");
+ worker.onmessage = function(event){
+document.getElementById("results").innerText = event.data;
+dump("Got:" + event.data+"\n	");
+};
+
+worker.onerror = function(error){
+		dump("work error:"+ error.message+"\n");
+		throw error;
+		};
+		worker.postmessage("5");
+ </script>
+  </body>
+</html>
