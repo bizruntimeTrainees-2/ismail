@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+ <body>
+  <div id="panal">
+  </div>
+ </body>
+ <script>
+
+ var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange=function(){
+      if(xhr.readyState===4)
+      {
+        document.getElementById("panal").innerHTML = xhr.responseText;
+      }
+    };
+    xhr.open("GET","/test.json",true);
+    xhr.send();
+ </script>
+</html>

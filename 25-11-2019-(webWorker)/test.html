@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+ <body>
+ <p>How many words:<input type="text" id="num"/>
+                <button id="submit">GO</button>
+  </p>
+  <div id="panal"></div>
+ </body>
+ <script>
+ var worker =new Worker("test.js");
+ worker.onmessage = function (event)
+ {
+	document.getElementById("panal").innerText = event.data.test;
+};
+document.getElementById("submit").onclick = function(){
+	var totalwords = document.getElementById("num").value;
+	worker.postMessage({num: totalWords});
+}
+</script>
+</html>
