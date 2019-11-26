@@ -14,21 +14,19 @@
     <title>Form Creation</title>
   </head>
  <body >   
-<div class="btn-toolbar">
-  <div class="container-fluid" >   
-  
+
+  <ul  class="navbar-nav">
+  <div class="container-fluid" >    
   <b-tab type="button" class="btn btn-primary pd:10px" data-toggle="collapse" data-target="#demo1">Curds</b-tab>&nbsp;&nbsp;
   <div id="demo1" class="collapse">
     <div id="text">
-      <button-toolbar aria-label="Toolbar with button groups and input groups" >  
-        <button-group size="sm" class="mr-1">
+      
           <b-button class="bg-primary" href="#">Get</b-button>
           <button class="btn-sm bg-light" id="addButton">+</button>
           <input type="text"  id="text1" placeholder="foo=bar"/>
           <input type="text"  id="text2" placeholder="foo=bar"/>
           <input type="submit"  class="bg-danger" onclick="SendRequest()"/>
-        </button-group>
-    </button-toolbar> 
+     
    </div>
   <div>
       <b-button-toolbar aria-label="Toolbar with button groups and input groups" >  
@@ -54,8 +52,8 @@
       <b-button-toolbar aria-label="Toolbar with button groups and input groups" >  
         <b-button-group size="sm" class="mr-1">
           <b-button class="bg-primary" href="#" >Put</b-button>
-          <input type="text" placeholder="put"/>
-          <input type="submit"id="put"  class="bg-danger" onclick="Put()"/>
+          <input type="text" id="put" placeholder="put"/>
+          <input type="submit"  class="bg-danger" onclick="Put()"/>
         </b-button-group>
       </b-button-toolbar >
   </div>     
@@ -63,8 +61,8 @@
       <b-button-toolbar aria-label="Toolbar with button groups and input groups" >  
         <b-button-group size="sm" class="mr-1">
           <b-button class="bg-primary" href="#" >PATCH</b-button>
-          <input type="text" placeholder="patch"/>
-          <input type="submit" id="patch" class="bg-danger"onclick="Patch()"/>
+          <input type="text" id="patch" placeholder="patch"/>
+          <input type="submit"  class="bg-danger"onclick="Patch()"/>
         </b-button-group>
       </b-button-toolbar >
   </div>     
@@ -72,8 +70,8 @@
       <b-button-toolbar aria-label="Toolbar with button groups and input groups" >  
         <b-button-group size="sm" class="mr-1">
           <b-button class="bg-primary" href="#" >Delete</b-button>
-          <input type="text" placeholder="delete"/>
-          <input type="submit" id="delete" class="bg-danger"onclick="Delete()"/>
+          <input type="text" id="delete" placeholder="delete"/>
+          <input type="submit"  class="bg-danger"onclick="Delete()"/>
         </b-button-group>
       </b-button-toolbar >
     </div>            
@@ -108,18 +106,20 @@
         <li><b-tab  type="button" class="btn-sm text-primary" data-toggle="collapse" data-target="#demo4"><a href="#">Basic Auth </a></b-tab> </li>
     </div>
     <div id="demo4" class="collapse">
-        <li>UserName:<input type="text" id="u" class="btn-sm" role="button" style="border-color:blue" placeholder="User Name"/></li>
-        <li>Password:<input type="password" id="p" class="btn-sm" role="button" style="border-color:blue" placeholder="password"></li>
-        <li><input type="submit" class="btn-sm btn-primary" onclick="SendData()"/></li>
+        <li>UserName:<input type="text" id="User" class="btn-sm" role="button" style="border-color:blue" placeholder="User Name"/></li>
+        <li>Password:<input type="password" id="pass" class="btn-sm" role="button" style="border-color:blue" placeholder="password"></li>
+        <li><input type="submit" class="btn-sm btn-primary" onclick="Auth()"/></li>
       </div>
- </div>
-</div>
+    </div>
+
+</ul>
+
    <div id="show" style="height: 200px; widows: 300px; border-block-color: red;">
    
     </div>                       
                                             
           
-    <script src=task.js></script>              
+    <script src=task.js></script>                                                
     
   </body>
   

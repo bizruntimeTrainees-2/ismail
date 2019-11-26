@@ -18,13 +18,13 @@ function SendRequest()
        {
         if(text.children[i].id.includes("Text"))
         {
-          data += text.children[i].id +'='+ text.children[i].value +'&';
-        }
-        else
-        {
-          data += text1.value + '&'+ text2.value;
-         }
+          data += text.children[i].id +'='+ text.children[i].value +'&';  
+          data += data.value;       
+        }  
       }
+      
+        data += text1.value + '&'+ text2.value;
+       
     var xhr = new XMLHttpRequest();
     xhr.withCredentials = true;
     
@@ -54,12 +54,9 @@ function PostData()
   
   
   xhr.open("POST","/post");
-  xhr.setRequestHeader("Host"," postman-echo.com");
   xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");  
-  xhr.setRequestHeader("User-Agent", "PostmanRuntime/7.19.0"); 
   xhr.setRequestHeader("Accept", "*/*"); 
   xhr.setRequestHeader("cache-control", "no-cache");
-  xhr.setRequestHeader("Accept-Encoding", "gzip", "deflate");
   xhr.setRequestHeader("postman-token", "85640a1b-7f2c-463e-9f82-c788a101ecc6","0141b2e3-5e5e-42d7-847e-c960567850f0"); 
   xhr.send(data.value);
 }
@@ -89,8 +86,7 @@ function PostFormData()
   xhr.open("POST","/post");
   xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");  
   xhr.setRequestHeader("Accept", "*/*"); 
-  xhr.setRequestHeader("cache-control", "no-cache");
- 
+  xhr.setRequestHeader("cache-control", "no-cache"); 
   xhr.setRequestHeader("postman-token", "85640a1b-7f2c-463e-9f82-c788a101ecc6","0141b2e3-5e5e-42d7-847e-c960567850f0"); 
   xhr.send(datap);
 }
@@ -100,16 +96,14 @@ function Put()
   var datapu = document.getElementById("put");
   var  xhr = new XMLHttpRequest();
   xhr.onreadystatechange=function(){
-    if(xhr.status==200&& xhr.readyState==4)
+    if(xhr.status==200 && xhr.readyState==4)
     {
       document.getElementById("show").innerHTML = xhr.responseText;
     }
   };
- 
+  
   xhr.open("PUT","/put");
   xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"); 
-  xhr.setRequestHeader("Content-Type", "application/json"); 
-  xhr.setRequestHeader("Content-Type", "multipart/form-data"); 
   xhr.setRequestHeader("Accept", "*/*"); 
   xhr.setRequestHeader("cache-control", "no-cache");
   xhr.setRequestHeader("postman-token", "85640a1b-7f2c-463e-9f82-c788a101ecc6","0141b2e3-5e5e-42d7-847e-c960567850f0");  
@@ -148,3 +142,30 @@ function Delete()
   xhr.send(data.value);
 }
 
+function  Base_auth(userName, password)
+{
+    var tik = userName + ":" + password;
+    var tok = btoa(tik);
+    return "Basic" +tok;
+}
+
+function Auth()
+{
+    var userName = $("#user").val();
+    var password = $("#pass").val();
+
+    var auth = Base_auth(userName,password);
+    var xhr = new XMLHttpRequest();
+    xhr.withCredentials = true;
+    xhr.onreadystatechange=function(){
+        if(xhr.status==200&& xhr.readyState==4)
+        {
+          document.getElementById("show").innerHTML = xhr.responseText ;
+        } 
+      };
+   xhr.open("GET","/basic-auth");
+  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");  
+  xhr.setRequestHeader("cache-control", "no-cache");
+  xhr.setRequestHeader("postman-token", "85640a1b-7f2c-463e-9f82-c788a101ecc6","0141b2e3-5e5e-42d7-847e-c960567850f0"); 
+  xhr.send();
+}
