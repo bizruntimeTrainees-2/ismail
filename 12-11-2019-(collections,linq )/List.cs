@@ -6,7 +6,7 @@ namespace CollectionsL
     {
         public static void Main()
         {
-            var cars = new List<Car>();
+            List<Car> cars = new List<Car>();
             cars.Add(new Car(){name="Honda1", color="blue", speed=50});
             cars.Add(new Car(){name="Honda2", color="green", speed=20});
             cars.Add(new Car(){name="Honda3", color="blue", speed=60});

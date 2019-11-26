@@ -29,7 +29,7 @@ namespace Idictionary
 
     class Dictionary_Demo
     {
-        static void Main()
+        static void Main(string[] args)
         {
             var dictionary = new Dictionary<string, IValue>();
             dictionary.Add("book", new Image());
@@ -38,6 +38,7 @@ namespace Idictionary
 
             // Look up interface objects and call implementations.
             IValue value;
+
             if (dictionary.TryGetValue("book", out value))
             {
                 value.Render(); 

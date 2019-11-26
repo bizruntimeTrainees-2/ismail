@@ -10,7 +10,6 @@ namespace Dictionary
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Dictionary containded key vaues are.....");
             Dictionary<int, string> student_names = new Dictionary<int, string>();
             student_names.Add(1, "ismail");
             student_names.Add(2, "sruthi");
@@ -55,9 +54,6 @@ namespace Dictionary
             }
 
             Console.ReadKey();
-             
-
-
         }
     }
 }
