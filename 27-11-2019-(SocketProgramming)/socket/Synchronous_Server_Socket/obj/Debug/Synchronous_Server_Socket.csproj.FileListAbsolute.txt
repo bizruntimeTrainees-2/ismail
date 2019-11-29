@@ -1,0 +1,6 @@
+D:\Socket_Programming\Synchronous_Server_Socket\bin\Debug\Synchronous_Server_Socket.exe.config
+D:\Socket_Programming\Synchronous_Server_Socket\bin\Debug\Synchronous_Server_Socket.exe
+D:\Socket_Programming\Synchronous_Server_Socket\bin\Debug\Synchronous_Server_Socket.pdb
+D:\Socket_Programming\Synchronous_Server_Socket\obj\Debug\Synchronous_Server_Socket.csprojAssemblyReference.cache
+D:\Socket_Programming\Synchronous_Server_Socket\obj\Debug\Synchronous_Server_Socket.exe
+D:\Socket_Programming\Synchronous_Server_Socket\obj\Debug\Synchronous_Server_Socket.pdb
