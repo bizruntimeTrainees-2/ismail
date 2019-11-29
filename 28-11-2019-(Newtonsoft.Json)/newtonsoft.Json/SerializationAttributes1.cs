@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Attributes
 {
-       public enum userDetails    {   Alive,Male, Unmarried}
+    public enum userDetails    {   Alive,Male, Unmarried}
     public class User
-{
-      public string username{ get; set;}
+   {
+        public string username{ get; set;}
 
       [JsonConverter(typeof(StringEnumConverter))]
-      public userDetails  details {get; set;}
-}
+       public userDetails  details {get; set;}
+    }
 }
 
