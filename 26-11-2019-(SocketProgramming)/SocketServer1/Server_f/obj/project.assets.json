@@ -1,0 +1,130 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "Json.Net/1.0.18": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Json.Net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Json.Net.dll": {}
+        }
+      },
+      "NuGet.Frameworks/5.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NuGet.Frameworks.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NuGet.Frameworks.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Json.Net/1.0.18": {
+      "sha512": "LeHX1l1FbTeg5C6rvx19qE/OLrPM7ggmlMBJgu08bcMn9anbE0SEF3BXwhUrio8/f0445XJnAaE5gmhqRCEuzw==",
+      "type": "package",
+      "path": "json.net/1.0.18",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "json.net.1.0.18.nupkg.sha512",
+        "json.net.nuspec",
+        "lib/netstandard2.0/Json.Net.dll"
+      ]
+    },
+    "NuGet.Frameworks/5.3.1": {
+      "sha512": "K+48whT18GCxeDBlawMddXLBJLyl/hti7upEifqKDr9yllfeuxbfdxD85LR01tQUfFSqF9otkMxOBqr2g89eGg==",
+      "type": "package",
+      "path": "nuget.frameworks/5.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/NuGet.Frameworks.dll",
+        "lib/net40/NuGet.Frameworks.xml",
+        "lib/net472/NuGet.Frameworks.dll",
+        "lib/net472/NuGet.Frameworks.xml",
+        "lib/netstandard2.0/NuGet.Frameworks.dll",
+        "lib/netstandard2.0/NuGet.Frameworks.xml",
+        "nuget.frameworks.5.3.1.nupkg.sha512",
+        "nuget.frameworks.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.0": [
+      "Json.Net >= 1.0.18",
+      "NuGet.Frameworks >= 5.3.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\ismai\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\gitFolder\\ismail\\26-11-2019-(SocketProgramming)\\SocketServer1\\Server_f\\Server_f.csproj",
+      "projectName": "Server_f",
+      "projectPath": "E:\\gitFolder\\ismail\\26-11-2019-(SocketProgramming)\\SocketServer1\\Server_f\\Server_f.csproj",
+      "packagesPath": "C:\\Users\\ismai\\.nuget\\packages\\",
+      "outputPath": "E:\\gitFolder\\ismail\\26-11-2019-(SocketProgramming)\\SocketServer1\\Server_f\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\ismai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "dependencies": {
+          "Json.Net": {
+            "target": "Package",
+            "version": "[1.0.18, )"
+          },
+          "NuGet.Frameworks": {
+            "target": "Package",
+            "version": "[5.3.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

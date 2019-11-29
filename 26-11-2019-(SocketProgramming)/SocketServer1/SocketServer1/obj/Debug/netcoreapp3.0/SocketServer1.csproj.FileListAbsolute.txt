@@ -1,0 +1,14 @@
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\SocketServer1\SocketServer1\bin\Debug\netcoreapp3.0\SocketServer1.exe
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\SocketServer1\SocketServer1\bin\Debug\netcoreapp3.0\SocketServer1.deps.json
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\SocketServer1\SocketServer1\bin\Debug\netcoreapp3.0\SocketServer1.runtimeconfig.json
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\SocketServer1\SocketServer1\bin\Debug\netcoreapp3.0\SocketServer1.runtimeconfig.dev.json
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\SocketServer1\SocketServer1\bin\Debug\netcoreapp3.0\SocketServer1.dll
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\SocketServer1\SocketServer1\bin\Debug\netcoreapp3.0\SocketServer1.pdb
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\SocketServer1\SocketServer1\obj\Debug\netcoreapp3.0\SocketServer1.csprojAssemblyReference.cache
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\SocketServer1\SocketServer1\obj\Debug\netcoreapp3.0\SocketServer1.AssemblyInfoInputs.cache
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\SocketServer1\SocketServer1\obj\Debug\netcoreapp3.0\SocketServer1.AssemblyInfo.cs
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\SocketServer1\SocketServer1\obj\Debug\netcoreapp3.0\SocketServer1.dll
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\SocketServer1\SocketServer1\obj\Debug\netcoreapp3.0\SocketServer1.pdb
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\SocketServer1\SocketServer1\bin\Debug\netcoreapp3.0\NuGet.Frameworks.dll
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\SocketServer1\SocketServer1\obj\Debug\netcoreapp3.0\SocketServer1.csproj.CopyComplete
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\SocketServer1\SocketServer1\bin\Debug\netcoreapp3.0\Json.Net.dll

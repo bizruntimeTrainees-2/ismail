@@ -14,12 +14,11 @@ namespace Socket_Listener
         public static void StartServer()
         {
             // Get Host IP Address that is used to establish a connection  
-            // In this case, we get one IP address of localhost that is IP : 127.0.0.1  
             // If a host has multiple addresses, you will get a list of addresses  
 
             IPHostEntry host = Dns.GetHostEntry("localhost");
             IPAddress ipAddress = host.AddressList[0];
-            IPEndPoint localEndPoint = new IPEndPoint(ipAddress, 11000);
+            IPEndPoint localEndPoint = new IPEndPoint(ipAddress, 1100);
 
             try
             {

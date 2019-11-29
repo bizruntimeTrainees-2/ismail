@@ -18,12 +18,14 @@ namespace SingleServer
             sck.Listen(100);
 
             //create a socket for a newly created connection
-            Socket accept = sck.Accept();
+            Socket accepted = sck.Accept();
 
             //value that specifies the send buffer size
-            Buffer = new byte[accept.SendBufferSize];
+            Buffer = new byte[accepted.SendBufferSize];
+
             //receive data from the bound socket into a received buffer
-            int bytesRead = accept.Receive(Buffer);
+            int bytesRead = accepted.Receive(Buffer);
+
             byte[] formatted = new byte[bytesRead];
             //reading received buffer data into formatted byte array
             for(int i= 0; i < bytesRead; i++)

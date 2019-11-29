@@ -1,0 +1,43 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "Json.Net/1.0.18": {
+        "runtime": {
+          "lib/netstandard2.0/Json.Net.dll": {
+            "assemblyVersion": "1.0.18.1",
+            "fileVersion": "1.0.18.1"
+          }
+        }
+      },
+      "NuGet.Frameworks/5.3.1": {
+        "runtime": {
+          "lib/netstandard2.0/NuGet.Frameworks.dll": {
+            "assemblyVersion": "5.3.1.0",
+            "fileVersion": "5.3.1.6268"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Json.Net/1.0.18": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LeHX1l1FbTeg5C6rvx19qE/OLrPM7ggmlMBJgu08bcMn9anbE0SEF3BXwhUrio8/f0445XJnAaE5gmhqRCEuzw==",
+      "path": "json.net/1.0.18",
+      "hashPath": "json.net.1.0.18.nupkg.sha512"
+    },
+    "NuGet.Frameworks/5.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-K+48whT18GCxeDBlawMddXLBJLyl/hti7upEifqKDr9yllfeuxbfdxD85LR01tQUfFSqF9otkMxOBqr2g89eGg==",
+      "path": "nuget.frameworks/5.3.1",
+      "hashPath": "nuget.frameworks.5.3.1.nupkg.sha512"
+    }
+  }
+}
