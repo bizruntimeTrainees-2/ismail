@@ -5,7 +5,7 @@ interface InterClass
 }
     function CreateSquare(config: InterClass){ color:string; area: number}
     {
-        let newSquare = {color: "red"; width: 50};
+        let newSquare = {color: "red", width: 50};
         if (config.color)
         {
             newSquare.color = config.color;

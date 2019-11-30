@@ -1,0 +1,29 @@
+<!doctype html>
+<html >
+ <head>
+ <script  type="text/javascript">
+	function PostData()
+{
+  var data = document.getElementById("post");
+  var  xhr = new XMLHttpRequest();
+  xhr.onreadystatechange=function(){
+    if(xhr.status==200&& xhr.readyState==4)
+    {
+      document.getElementById("show").innerHTML = xhr.responseText ;
+    } 
+  };
+  
+  
+  xhr.open("POST","/post");
+  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");  
+  xhr.setRequestHeader("Accept", "*/*"); 
+  xhr.setRequestHeader("cache-control", "no-cache");
+  xhr.setRequestHeader("postman-token", "85640a1b-7f2c-463e-9f82-c788a101ecc6","0141b2e3-5e5e-42d7-847e-c960567850f0"); 
+  xhr.send(data.value);
+}
+ </script>
+ </head>
+ <body>
+  Request data: <span id="post"></span><input type="submit" value="submit" onclick="PostData()"/>
+ </body>
+</html>

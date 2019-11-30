@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+ 
+ <body>
+  <div id="div1"> div1</div>
+  <div id="div2"> div2</div>
+  <p id="p"> div2</p>
+ </body>
+ <script>
+ var parent = document.createElement("div");
+var child = document.createElement("p");
+var child = document.getElementById("p");
+parent.appendChild(child);
+var span = document.createElement("span");
+
+child.before(span);
+child.after(span);
+child.remove();
+
+console.log(parent.outerHTML);
+ </script>
+</html>

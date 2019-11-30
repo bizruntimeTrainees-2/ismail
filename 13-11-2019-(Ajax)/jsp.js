@@ -1,9 +1,12 @@
+
 function myFunction(){
-loadFile("ajax.txt", 2000, showMessage, "new message!\n");
+  loadFile("ajax.txt", 2000, showMessage, "new message!\n");
+
 function showMessage(message)
 {
 	console.log(message + this.responseText)
 }
+
 function loadFile(url, timeout, callback)
 {
 	var args = Arrays.prototype.slice.call(arguments,3);

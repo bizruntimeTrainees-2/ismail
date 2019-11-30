@@ -1,4 +1,4 @@
-let socket = new WebSocket(" https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API");//url just taken as reference
+let socket = new WebSocket(" wss://www.example.com/socketserver");//url just taken as reference
 
 document.forms.myform.onsubmit= function ()  {
 	let out = this.message.value;

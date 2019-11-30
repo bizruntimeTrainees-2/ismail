@@ -18,6 +18,6 @@ class Employee extends Person {
 }
 
 let hello = new Employee("Howard", "Sales");
-let john = new Person("John"); 
-console.log(hello.name);
-console.log(john.name);
+//let john = new Person("John"); //error
+//console.log(hello.name);//error
+//console.log(john.name);

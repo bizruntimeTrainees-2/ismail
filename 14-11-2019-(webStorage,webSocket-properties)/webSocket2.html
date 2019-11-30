@@ -1,6 +1,6 @@
 <!doctype html>
 <script>
-let socket = new WebSocket("https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API");//url just taken for use
+let socket = new WebSocket("wss://www.example.com/socketserver");//url just taken for use
 socket.onopen= function(e){
 	alert("[open] connection established"+e.message);
 	alert("sending to the sever");

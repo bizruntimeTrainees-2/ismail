@@ -2,7 +2,7 @@ class Cleaner {
     hasMask: boolean;
 }
 
-class House {
+class House extends Cleaner {
     kichen: number;
 }
 
@@ -14,4 +14,4 @@ function createInstance<A extends House>(c: new () => A): A {
     return new c();
 }
 
-createInstance(room1).kichen.hasMask;   // typechecks!
+createInstance(room1).kichen;   // typechecks!
