@@ -146,10 +146,52 @@ function  Base_auth(userName, password)
 {
     var tik = userName + ":" + password;
     var tok = btoa(tik);
-    return "Basic" +tok;
+    return "Basic " +tok;
+}
+function RequestHeader()
+{
+  var req = document.getElementById("req");
+  var  xhr = new XMLHttpRequest();
+  xhr.onreadystatechange=function(){
+    if(xhr.status==200&& xhr.readyState==4)
+    {
+      var d =  document.getElementById("show");
+     d.innerHTML = xhr.responseText;
+    }
+  };
+
+  xhr.open("Get","/headers");
+  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");  
+  xhr.send(req.value);
+}
+function ResponseHeader()
+{
+  var res = document.getElementById("res");
+  var  xhr = new XMLHttpRequest();
+  xhr.onreadystatechange=function(){
+    if(xhr.status==200&& xhr.readyState==4)
+    {
+      var d =  document.getElementById("show");
+     d.innerHTML = xhr.responseText;
+    }
+  };
+
+  xhr.open("Get","/response-headers");
+  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");  
+  xhr.send(res.value);
 }
 
-function Auth()
+
+function  Base_auth(userName, password)
+{
+    var tik = userName + ":" + password;
+    var tok = btoa(tik);
+    return  "Basic"+tok;
+}
+
+
+
+function Authentication()
 {
     var userName = $("#user").val();
     var password = $("#pass").val();
@@ -162,10 +204,13 @@ function Auth()
         {
           document.getElementById("show").innerHTML = xhr.responseText ;
         } 
-      };
+       else
+      {
+         document.getElementById("show").innerHTML = xhr.responseText ;
+         }
+       };
    xhr.open("GET","/basic-auth");
   xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");  
-  xhr.setRequestHeader("cache-control", "no-cache");
-  xhr.setRequestHeader("postman-token", "85640a1b-7f2c-463e-9f82-c788a101ecc6","0141b2e3-5e5e-42d7-847e-c960567850f0"); 
+  xhr.setRequestHeader("Authorization",auth);  
   xhr.send();
 }

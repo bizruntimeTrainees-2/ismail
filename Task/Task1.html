@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+      
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -14,14 +15,26 @@
     <title>Form Creation</title>
   </head>
  <body >   
-
-  <ul  class="navbar-nav">
-  <div class="container-fluid" >    
-  <b-tab type="button" class="btn btn-primary pd:10px" data-toggle="collapse" data-target="#demo1">Curds</b-tab>&nbsp;&nbsp;
-  <div id="demo1" class="collapse">
+ <nav class="nav justify-content-center">
+    <ul  class="nav justify-content-center">
+        <li class="nav-item">
+          <tab type="button" class="btn btn-primary pd:10px" data-toggle="collapse" data-target="#demo1">Curds</tab>&nbsp;&nbsp;&nbsp;
+        </li>
+        <li class="nav-item">
+          <tab type="button" class="btn btn-primary pd:10px" data-toggle="collapse" data-target="#demo2">Headers</tab>&nbsp;&nbsp;&nbsp;
+        </li>
+        <li class="nav-item">
+          <tab type="button" class="btn btn-primary pd:10px" data-toggle="collapse" data-target="#demo3">Authentication</tab>
+        </li>
+    </ul>
+ </nav>
+  
+      
+  
+  <div id="demo1" class="container-fluid  my-5 collapse">
     <div id="text">
       
-          <b-button class="bg-primary" href="#">Get</b-button>
+          <button class="bg-primary" href="#">Get</button>
           <button class="btn-sm bg-light" id="addButton">+</button>
           <input type="text"  id="text1" placeholder="foo=bar"/>
           <input type="text"  id="text2" placeholder="foo=bar"/>
@@ -29,28 +42,28 @@
      
    </div>
   <div>
-      <b-button-toolbar aria-label="Toolbar with button groups and input groups" >  
-        <b-button-group size="sm" class="mr-1">
+      <button-toolbar aria-label="Toolbar with button groups and input groups" >  
+        <button-group size="sm" class="mr-1">
           <b-button class="bg-primary" href="#">Post</b-button>
           <input type="text" id="post" placeholder="post"/>
           <input type="submit" class="bg-danger" onclick="PostData()"/>
-        </b-button-group>
-      </b-button-toolbar>
+        </button-group>
+      </button-toolbar>
   </div>     
   <div id="postForm">
-      <b-button-toolbar aria-label="Toolbar with button groups and input groups" >  
-        <b-button-group size="sm" class="mr-1">
-          <b-button class="bg-primary" href="#" >Post Form Data</b-button>
+      <button-toolbar aria-label="Toolbar with button groups and input groups" >  
+        <button-group size="sm" class="mr-1 py-2">
+          <button class="bg-primary" href="#" >Post Form Data</button>
           <button class="btn-sm bg-light" id="addButtonP">+</button>
           <input type="text" id="text1_1" placeholder="post form data"/>
           <input type="text" id="text1_2" placeholder="post form data"/>
           <input type="submit"  class="bg-danger" onclick="PostFormData()"/>
-        </b-button-group>
-      </b-button-toolbar >
+        </button-group>
+      </button-toolbar >
   </div>     
   <div>
       <b-button-toolbar aria-label="Toolbar with button groups and input groups" >  
-        <b-button-group size="sm" class="mr-1">
+        <b-button-group size="sm" class="mr-1 py-2">
           <b-button class="bg-primary" href="#" >Put</b-button>
           <input type="text" id="put" placeholder="put"/>
           <input type="submit"  class="bg-danger" onclick="Put()"/>
@@ -76,15 +89,15 @@
       </b-button-toolbar >
     </div>            
   </div>
-  </div>
-  <div class="container-fluid ">
- <b-tab type="button" class="btn btn-primary pd:10px" data-toggle="collapse" data-target="#demo2">Headers</b-tab>&nbsp;&nbsp; 
-  <div id="demo2" class="collapse">
+  
+ 
+  
+  <div id="demo2" class="container-fluid my-5 collapse">
       <div>
           <b-button-toolbar aria-label="Toolbar with button groups and input groups" >  
             <b-button-group size="sm" class="mr-1">
               <b-button class="bg-primary" href="#" >Request Header</b-button>
-              <input type="text"/>
+              <input type="text" id="req"  placeholder="response header"/>
               <input type="submit" id="header" class="bg-danger" onclick="RequestHeader()"/>
             </b-button-group>
         </b-button-toolbar> 
@@ -93,33 +106,66 @@
           <b-button-toolbar aria-label="Toolbar with button groups and input groups" >  
             <b-button-group size="sm" class="mr-1">
               <b-button class="bg-primary" href="#" >Response Header</b-button>
-              <input type="text" />
+              <input type="text" placeholder="response header" id="res"/>
               <input type="submit" class="bg-danger" onclick="ResponseHeader()"/>
             </b-button-group>
         </b-button-toolbar> 
       </div>
     </div>
-  </div>
-  <div class="container-fluid ">
-   <b-tab type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo3">Authentication</b-tab>
-    <div id="demo3" class="collapse">
+
+ 
+    <div id="demo3" class="container-fluid my-5 collapse">
         <li><b-tab  type="button" class="btn-sm text-primary" data-toggle="collapse" data-target="#demo4"><a href="#">Basic Auth </a></b-tab> </li>
     </div>
     <div id="demo4" class="collapse">
         <li>UserName:<input type="text" id="User" class="btn-sm" role="button" style="border-color:blue" placeholder="User Name"/></li>
         <li>Password:<input type="password" id="pass" class="btn-sm" role="button" style="border-color:blue" placeholder="password"></li>
-        <li><input type="submit" class="btn-sm btn-primary" onclick="Auth()"/></li>
-      </div>
+        <input type="submit" id="aaa" class="btn-sm btn-primary" onclick="Authentication()"></input>
     </div>
+    
 
-</ul>
+
 
    <div id="show" style="height: 200px; widows: 300px; border-block-color: red;">
    
     </div>                       
                                             
-          
-    <script src=task.js></script>                                                
     
   </body>
-  
+  <script src=task.js></script>
+  <script>
+	function RequestHeader()
+{
+  var req = document.getElementById("req");
+  var  xhr = new XMLHttpRequest();
+  xhr.onreadystatechange=function(){
+    if(xhr.status==200&& xhr.readyState==4)
+    {
+      var d =  document.getElementById("show");
+     d.innerHTML = xhr.responseText;
+    }
+  };
+
+  xhr.open("Get","/headers");
+  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");  
+  xhr.send(req.value);
+}
+  </script>  
+  <script>
+	function ResponseHeader()
+{
+  var res = document.getElementById("res");
+  var  xhr = new XMLHttpRequest();
+  xhr.onreadystatechange=function(){
+    if(xhr.status==200&& xhr.readyState==4)
+    {
+      var d =  document.getElementById("show");
+     d.innerHTML = xhr.responseText;
+    }
+  };
+
+  xhr.open("Get","/headers?Content-Type='application/json'");
+  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");  
+  xhr.send(res.value);
+}
+  </script>  
