@@ -10,6 +10,7 @@ namespace WaitOneClass
         {
              Console.WriteLine("Main starting");
              ThreadPool.QueueUserWorkItem(new WaitCallback(Method), autoEvent);
+
              //wait for work method to signal
 
              autoEvent.WaitOne();

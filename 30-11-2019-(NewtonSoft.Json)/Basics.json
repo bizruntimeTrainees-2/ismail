@@ -1,0 +1,16 @@
+
+//references
+[JsonObject (IsReference = true)]
+public class ReferenceProgramm
+{
+    public string name {get; set;}
+   public ReferenceProgramm manager {get; set;}
+}
+
+// reading json file 
+using (StreamReader reader = File.OpenText(@"c:\person.json"))
+{
+    JObject o = (JObject)JToken.ReadFrom(new JsonTextReader(reader));
+
+    //do remianing process
+}

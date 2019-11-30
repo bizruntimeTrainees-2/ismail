@@ -1,6 +1,0 @@
-E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\SocketServer1\Server_f\bin\Debug\netcoreapp3.0\Server_f.exe
-E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\SocketServer1\Server_f\obj\Debug\netcoreapp3.0\Server_f.csprojAssemblyReference.cache
-E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\SocketServer1\Server_f\obj\Debug\netcoreapp3.0\Server_f.AssemblyInfoInputs.cache
-E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\SocketServer1\Server_f\obj\Debug\netcoreapp3.0\Server_f.AssemblyInfo.cs
-E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\SocketServer1\Server_f\bin\Debug\netcoreapp3.0\NuGet.Frameworks.dll
-E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\SocketServer1\Server_f\obj\Debug\netcoreapp3.0\Server_f.csproj.CopyComplete

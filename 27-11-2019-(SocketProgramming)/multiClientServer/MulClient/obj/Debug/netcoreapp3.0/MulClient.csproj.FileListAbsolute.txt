@@ -1,0 +1,11 @@
+E:\C-sharp\Task2\Employeesdata\MulClient\bin\Debug\netcoreapp3.0\MulClient.exe
+E:\C-sharp\Task2\Employeesdata\MulClient\bin\Debug\netcoreapp3.0\MulClient.deps.json
+E:\C-sharp\Task2\Employeesdata\MulClient\bin\Debug\netcoreapp3.0\MulClient.runtimeconfig.json
+E:\C-sharp\Task2\Employeesdata\MulClient\bin\Debug\netcoreapp3.0\MulClient.runtimeconfig.dev.json
+E:\C-sharp\Task2\Employeesdata\MulClient\bin\Debug\netcoreapp3.0\MulClient.dll
+E:\C-sharp\Task2\Employeesdata\MulClient\bin\Debug\netcoreapp3.0\MulClient.pdb
+E:\C-sharp\Task2\Employeesdata\MulClient\obj\Debug\netcoreapp3.0\MulClient.csprojAssemblyReference.cache
+E:\C-sharp\Task2\Employeesdata\MulClient\obj\Debug\netcoreapp3.0\MulClient.AssemblyInfoInputs.cache
+E:\C-sharp\Task2\Employeesdata\MulClient\obj\Debug\netcoreapp3.0\MulClient.AssemblyInfo.cs
+E:\C-sharp\Task2\Employeesdata\MulClient\obj\Debug\netcoreapp3.0\MulClient.dll
+E:\C-sharp\Task2\Employeesdata\MulClient\obj\Debug\netcoreapp3.0\MulClient.pdb

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employeesdata", "Employeesdata\Employeesdata.csproj", "{2F421229-1E7F-40B3-A585-EE0AFAD2CE14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MulClient", "MulClient\MulClient.csproj", "{8C625AFD-F21F-4493-9D39-494A2F31EEB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F421229-1E7F-40B3-A585-EE0AFAD2CE14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F421229-1E7F-40B3-A585-EE0AFAD2CE14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F421229-1E7F-40B3-A585-EE0AFAD2CE14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F421229-1E7F-40B3-A585-EE0AFAD2CE14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C625AFD-F21F-4493-9D39-494A2F31EEB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C625AFD-F21F-4493-9D39-494A2F31EEB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C625AFD-F21F-4493-9D39-494A2F31EEB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C625AFD-F21F-4493-9D39-494A2F31EEB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94805FB6-0405-4716-A42A-E02EE4BF2194}
+	EndGlobalSection
+EndGlobal

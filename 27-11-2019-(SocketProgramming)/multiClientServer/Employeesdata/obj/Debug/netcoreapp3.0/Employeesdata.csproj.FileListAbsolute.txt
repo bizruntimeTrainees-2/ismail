@@ -1,0 +1,11 @@
+E:\C-sharp\Task2\Employeesdata\Employeesdata\bin\Debug\netcoreapp3.0\Employeesdata.exe
+E:\C-sharp\Task2\Employeesdata\Employeesdata\bin\Debug\netcoreapp3.0\Employeesdata.deps.json
+E:\C-sharp\Task2\Employeesdata\Employeesdata\bin\Debug\netcoreapp3.0\Employeesdata.runtimeconfig.json
+E:\C-sharp\Task2\Employeesdata\Employeesdata\bin\Debug\netcoreapp3.0\Employeesdata.runtimeconfig.dev.json
+E:\C-sharp\Task2\Employeesdata\Employeesdata\bin\Debug\netcoreapp3.0\Employeesdata.dll
+E:\C-sharp\Task2\Employeesdata\Employeesdata\bin\Debug\netcoreapp3.0\Employeesdata.pdb
+E:\C-sharp\Task2\Employeesdata\Employeesdata\obj\Debug\netcoreapp3.0\Employeesdata.csprojAssemblyReference.cache
+E:\C-sharp\Task2\Employeesdata\Employeesdata\obj\Debug\netcoreapp3.0\Employeesdata.AssemblyInfoInputs.cache
+E:\C-sharp\Task2\Employeesdata\Employeesdata\obj\Debug\netcoreapp3.0\Employeesdata.AssemblyInfo.cs
+E:\C-sharp\Task2\Employeesdata\Employeesdata\obj\Debug\netcoreapp3.0\Employeesdata.dll
+E:\C-sharp\Task2\Employeesdata\Employeesdata\obj\Debug\netcoreapp3.0\Employeesdata.pdb

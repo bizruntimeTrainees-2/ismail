@@ -1,0 +1,12 @@
+E:\C-sharp\Task2\EmployeeData\Newtonsoft_Json\obj\Debug\netcoreapp3.0\Newtonsoft_Json.AssemblyInfoInputs.cache
+E:\C-sharp\Task2\EmployeeData\Newtonsoft_Json\obj\Debug\netcoreapp3.0\Newtonsoft_Json.AssemblyInfo.cs
+E:\C-sharp\Task2\EmployeeData\Newtonsoft_Json\bin\Debug\netcoreapp3.0\Newtonsoft_Json.exe
+E:\C-sharp\Task2\EmployeeData\Newtonsoft_Json\bin\Debug\netcoreapp3.0\Newtonsoft_Json.deps.json
+E:\C-sharp\Task2\EmployeeData\Newtonsoft_Json\bin\Debug\netcoreapp3.0\Newtonsoft_Json.runtimeconfig.json
+E:\C-sharp\Task2\EmployeeData\Newtonsoft_Json\bin\Debug\netcoreapp3.0\Newtonsoft_Json.runtimeconfig.dev.json
+E:\C-sharp\Task2\EmployeeData\Newtonsoft_Json\bin\Debug\netcoreapp3.0\Newtonsoft_Json.dll
+E:\C-sharp\Task2\EmployeeData\Newtonsoft_Json\bin\Debug\netcoreapp3.0\Newtonsoft_Json.pdb
+E:\C-sharp\Task2\EmployeeData\Newtonsoft_Json\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+E:\C-sharp\Task2\EmployeeData\Newtonsoft_Json\obj\Debug\netcoreapp3.0\Newtonsoft_Json.csproj.CopyComplete
+E:\C-sharp\Task2\EmployeeData\Newtonsoft_Json\obj\Debug\netcoreapp3.0\Newtonsoft_Json.dll
+E:\C-sharp\Task2\EmployeeData\Newtonsoft_Json\obj\Debug\netcoreapp3.0\Newtonsoft_Json.pdb

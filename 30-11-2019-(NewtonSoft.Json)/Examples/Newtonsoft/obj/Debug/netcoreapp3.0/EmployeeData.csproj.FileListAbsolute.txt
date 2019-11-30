@@ -1,0 +1,12 @@
+E:\C-sharp\Task2\EmployeeData\EmployeeData\bin\Debug\netcoreapp3.0\EmployeeData.exe
+E:\C-sharp\Task2\EmployeeData\EmployeeData\obj\Debug\netcoreapp3.0\EmployeeData.AssemblyInfoInputs.cache
+E:\C-sharp\Task2\EmployeeData\EmployeeData\obj\Debug\netcoreapp3.0\EmployeeData.AssemblyInfo.cs
+E:\C-sharp\Task2\EmployeeData\EmployeeData\bin\Debug\netcoreapp3.0\EmployeeData.deps.json
+E:\C-sharp\Task2\EmployeeData\EmployeeData\bin\Debug\netcoreapp3.0\EmployeeData.runtimeconfig.json
+E:\C-sharp\Task2\EmployeeData\EmployeeData\bin\Debug\netcoreapp3.0\EmployeeData.runtimeconfig.dev.json
+E:\C-sharp\Task2\EmployeeData\EmployeeData\bin\Debug\netcoreapp3.0\EmployeeData.dll
+E:\C-sharp\Task2\EmployeeData\EmployeeData\bin\Debug\netcoreapp3.0\EmployeeData.pdb
+E:\C-sharp\Task2\EmployeeData\EmployeeData\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+E:\C-sharp\Task2\EmployeeData\EmployeeData\obj\Debug\netcoreapp3.0\EmployeeData.csproj.CopyComplete
+E:\C-sharp\Task2\EmployeeData\EmployeeData\obj\Debug\netcoreapp3.0\EmployeeData.dll
+E:\C-sharp\Task2\EmployeeData\EmployeeData\obj\Debug\netcoreapp3.0\EmployeeData.pdb

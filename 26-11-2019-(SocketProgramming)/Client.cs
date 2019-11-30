@@ -17,8 +17,9 @@ namespace Client
             {
                 sck.Connect(localEndPoint);
             }
-            catch ()
+            catch (Exception ex)
             {
+                Console.WriteLine("Exception raised"+ex);
             }
             sck.Bind(new IPEndPoint(0, 1234));
             sck.Listen(100);
