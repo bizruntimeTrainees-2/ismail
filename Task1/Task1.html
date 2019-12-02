@@ -120,52 +120,41 @@
     <div id="demo4" class="collapse">
         <li>UserName:<input type="text" id="User" class="btn-sm" role="button" style="border-color:blue" placeholder="User Name"/></li>
         <li>Password:<input type="password" id="pass" class="btn-sm" role="button" style="border-color:blue" placeholder="password"></li>
-        <input type="submit" id="aaa" class="btn-sm btn-primary" onclick="Authentication()"></input>
+        <input type="submit" id="auth" class="btn-sm btn-primary" onclick="Authentication()"></input>
     </div>
     
 
 
 
-   <div id="show" style="height: 200px; widows: 300px; border-block-color: red;">
+   <div id="show" style="height: 200px; border-block-color: red;">
    
     </div>                       
                                             
     
   </body>
-  <script src=task.js></script>
-  <script>
-	function RequestHeader()
-{
-  var req = document.getElementById("req");
-  var  xhr = new XMLHttpRequest();
-  xhr.onreadystatechange=function(){
-    if(xhr.status==200&& xhr.readyState==4)
-    {
-      var d =  document.getElementById("show");
-     d.innerHTML = xhr.responseText;
-    }
-  };
+  <script  src="task1.js"></script>
 
-  xhr.open("Get","/headers");
-  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");  
-  xhr.send(req.value);
-}
-  </script>  
   <script>
-	function ResponseHeader()
+    
+function Authentication()
 {
-  var res = document.getElementById("res");
-  var  xhr = new XMLHttpRequest();
-  xhr.onreadystatechange=function(){
-    if(xhr.status==200&& xhr.readyState==4)
-    {
-      var d =  document.getElementById("show");
-     d.innerHTML = xhr.responseText;
-    }
-  };
-
-  xhr.open("Get","/headers?Content-Type='application/json'");
-  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");  
-  xhr.send(res.value);
+    var userName = $("#user").val();
+    var password = $("#pass").val();
+    var xhr = new XMLHttpRequest();
+    xhr.withCredentials = true;
+    xhr.onreadystatechange=function(){
+        if(xhr.status==200&& xhr.readyState==4)
+        {
+          document.getElementById("show").innerHTML = xhr.responseText ;
+        } 
+       else
+      {
+         document.getElementById("show").innerHTML = xhr.responseText ;
+         }
+       };
+   xhr.open("GET","/basic-auth");
+  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");   
+  xhr.send();
 }
-  </script>  
+</script>
+	

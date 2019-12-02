@@ -1,4 +1,4 @@
-Emp Name,Emp Id,Cmp Name,Cmp Id,Designation,Department
+Emp Id,Emp Name,Cmp Name,Cmp Id,Designation,Department
 410,Ramesh,Samsung,30,HardearEngineer,IT
 411,Rani,Samsung,30,Softwareengineer,HR
 412,Bhavesh,Samsung,30,Systemsanalyst,Infrastructures

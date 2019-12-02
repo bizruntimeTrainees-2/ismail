@@ -1,4 +1,4 @@
-Emp Name,Emp Id,Cmp Name,Cmp Id,Designation,Department
+Emp Id,Emp Name,Cmp Name,Cmp Id,Designation,Department
 210,Ramesh,Lenovo,20,HardearEngineer,IT
 211,Rani,Lenovo,20,Softwareengineer,HR
 212,Bhavesh,Lenovo,20,Systemsanalyst,Infrastructures

@@ -1,4 +1,4 @@
-Emp Name,Emp Id,Cmp Name,Cmp Id,Designation,Department
+Emp Id,Emp Name,Cmp Name,Cmp Id,Designation,Department
 810,Ramesh,Acer,50,HardearEngineer,IT
 811,Rani,Acer,50,Softwareengineer,HR
 812,Bhavesh,Acer,50,Systemsanalyst,Infrastructures

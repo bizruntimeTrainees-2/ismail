@@ -1,4 +1,4 @@
-Emp Name,Emp Id,Cmp Name,Cmp Id,Designation,Department
+Emp Id,Emp Name,Cmp Name,Cmp Id,Designation,Department
 10,Ramesh,HP,10,HardearEngineer,IT
 11,Rani,HP,10,Softwareengineer,HR
 12,Bhavesh,HP,10,Systemsanalyst,Infrastructures

@@ -1,4 +1,3 @@
-
 var input_id =2;
 
 $(function(){
@@ -142,12 +141,6 @@ function Delete()
   xhr.send(data.value);
 }
 
-function  Base_auth(userName, password)
-{
-    var tik = userName + ":" + password;
-    var tok = btoa(tik);
-    return "Basic " +tok;
-}
 function RequestHeader()
 {
   var req = document.getElementById("req");
@@ -176,41 +169,6 @@ function ResponseHeader()
     }
   };
 
-  xhr.open("Get","/response-headers");
-  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");  
-  xhr.send(res.value);
-}
-
-
-function  Base_auth(userName, password)
-{
-    var tik = userName + ":" + password;
-    var tok = btoa(tik);
-    return  "Basic"+tok;
-}
-
-
-
-function Authentication()
-{
-    var userName = $("#user").val();
-    var password = $("#pass").val();
-
-    var auth = Base_auth(userName,password);
-    var xhr = new XMLHttpRequest();
-    xhr.withCredentials = true;
-    xhr.onreadystatechange=function(){
-        if(xhr.status==200&& xhr.readyState==4)
-        {
-          document.getElementById("show").innerHTML = xhr.responseText ;
-        } 
-       else
-      {
-         document.getElementById("show").innerHTML = xhr.responseText ;
-         }
-       };
-   xhr.open("GET","/basic-auth");
-  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");  
-  xhr.setRequestHeader("Authorization",auth);  
+  xhr.open("Get","/response-headers?Content-Type=text/html&test=response_headers",true);  
   xhr.send();
 }
