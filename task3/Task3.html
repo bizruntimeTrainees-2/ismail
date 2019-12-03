@@ -12,7 +12,6 @@
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
           <!-- Bootstrap CSS -->
           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-         <!-- <script src="table.scss"></script>-->
          
          <script>
            function downloadCSV(csv, filename) {
@@ -32,7 +31,7 @@ function exportTableToCSV(filename) {
     for (var i = 0; i < rows.length; i++) {
         var row = [], cols = rows[i].querySelectorAll("td, th");
         
-        for (var j = 0; j < cols.length; j++){
+        for (var j = 0; j < cols.length-2; j++){
           row.push(cols[j].innerText);
         }        
         csv.push(row.join(","));        
