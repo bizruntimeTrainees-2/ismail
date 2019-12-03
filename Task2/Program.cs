@@ -14,10 +14,7 @@ namespace EmployeeCreate
             List<Employee> listEmployee = CreateEmployee.CreateEmployees();
           
             CreateEmployeeList(listEmployee);
-            foreach (var item in listEmployee)
-            {
-                Console.WriteLine(item);
-            }
+           
         }
 
         public static void CreateEmployeeList(List<Employee> listEmployee)
@@ -32,10 +29,12 @@ namespace EmployeeCreate
             {
                 using (StreamWriter file = new StreamWriter(csvPath, true))
                 {
-                    file.WriteLine("Emp Id," + "Emp Name," + "Cmp Name," + "Cmp Id," + "Designation," + "Department");
+                    file.WriteLine("Emp Name," + "Emp Id," + "Cmp Name," + "Cmp Id," + "Designation," + "Department");
                     foreach (Employee emp in listEmployee)
                     {
                         file.WriteLine(emp.employeeId + "," + emp.name + "," + emp.companyName + "," + emp.companyId +
+                   "," + emp.designation + "," + emp.department);
+                        Console.WriteLine(emp.employeeId + "," + emp.name + "," + emp.companyName + "," + emp.companyId +
                    "," + emp.designation + "," + emp.department);
                     }
                     Console.WriteLine("File has been created:");
@@ -43,7 +42,7 @@ namespace EmployeeCreate
 
                 using (StreamWriter file = new StreamWriter(file1, true))
                 {
-                     file.WriteLine("Emp Id," + "Emp Name," + "Cmp Name," + "Cmp Id," + "Designation," + "Department");
+                    file.WriteLine("Emp Name," + "Emp Id," + "Cmp Name," + "Cmp Id," + "Designation," + "Department");
                     foreach (Employee emp in listEmployee)
                     {
                         if(emp.companyName =="HP")
@@ -56,7 +55,7 @@ namespace EmployeeCreate
                 }
                 using (StreamWriter file = new StreamWriter(file2, true))
                 {
-                    file.WriteLine("Emp Id," + "Emp Name," + "Cmp Name," + "Cmp Id," + "Designation," + "Department");
+                    file.WriteLine("Emp Name," + "Emp Id," + "Cmp Name," + "Cmp Id," + "Designation," + "Department");
                     foreach (Employee emp in listEmployee)
                     {
                         if (emp.companyName == "Asus")
@@ -69,7 +68,7 @@ namespace EmployeeCreate
                 }
                 using (StreamWriter file = new StreamWriter(file3, true))
                 {
-                  file.WriteLine("Emp Id," + "Emp Name," + "Cmp Name," + "Cmp Id," + "Designation," + "Department");
+                    file.WriteLine("Emp Name," + "Emp Id," + "Cmp Name," + "Cmp Id," + "Designation," + "Department");
                     foreach (Employee emp in listEmployee)
                     {
                         if (emp.companyName == "Lenovo")
@@ -82,7 +81,7 @@ namespace EmployeeCreate
                 }
                 using (StreamWriter file = new StreamWriter(file4, true))
                 {
-                    file.WriteLine("Emp Id," + "Emp Name," + "Cmp Name," + "Cmp Id," + "Designation," + "Department");
+                    file.WriteLine("Emp Name," + "Emp Id," + "Cmp Name," + "Cmp Id," + "Designation," + "Department");
                     foreach (Employee emp in listEmployee)
                     {
                         if (emp.companyName == "Samsung")
@@ -95,7 +94,7 @@ namespace EmployeeCreate
                 }
                 using (StreamWriter file = new StreamWriter(file5, true))
                 {
-                    file.WriteLine("Emp Id," + "Emp Name," + "Cmp Name," + "Cmp Id," + "Designation," + "Department");
+                    file.WriteLine("Emp Name," + "Emp Id," + "Cmp Name," + "Cmp Id," + "Designation," + "Department");
                     foreach (Employee emp in listEmployee)
                     {
                         if (emp.companyName == "Acer")
@@ -113,13 +112,7 @@ namespace EmployeeCreate
             }
 
         }
-        public static void DisplayEmployee(List<Employee> employee)
-        {
-            foreach (Employee emp in employee)
-            {
-                Console.WriteLine();
-            }
-        }
+      
         public static List<Employee> CreateEmployees()
         {
             List<Employee> employeeList = new List<Employee>();
