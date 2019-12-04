@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <meta charset="UTF-8">
+  <title>JQuery Methods</title>
+  <script>
+  $(document).ready(function(){
+	$("#btn1").click(function(){
+		$("p:first").after("<p>Hello to first line1</p>");
+	});
+  });
+  $(document).ready(function(){
+	$("#btn2").click(function(){
+		$("p:first").before("<p>Hello to first line2</p>");
+	});
+  });
+  $(document).ready(function(){
+  $("#btn3").click(function(){
+    $("p:second").clone().appendTo("body");
+  });
+});
+$(document).ready(function(){
+  $("#btn4").click(function(){
+    $("p:last").detach();
+  });
+});
+$(document).ready(function(){
+  $("#btn5").click(function(){
+    $("p").css("color", "red");
+  });
+});
+ </script>
+ </head>
+ <body>
+  <p> the first line</p>
+  <p> the second line</p>
+  <p> the third line</p>
+  <button id="btn1">insert after the first p element</button>
+  <button id="btn2">insert before the first p element</button>
+  <button id="btn3">clone second p element</button>
+  <button id="btn4">detach last p element</button>
+  <button id="btn5">add color to  p elements</button>
+
+ </body>
+ 
+</html>
