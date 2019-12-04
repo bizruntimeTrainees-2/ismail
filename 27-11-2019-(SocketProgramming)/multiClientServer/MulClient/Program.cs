@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net.Sockets;
 using System.Threading;
+using System.IO;
 namespace MulClient
 {
     public class MultiClient
@@ -19,8 +20,8 @@ namespace MulClient
             }
 
             NetworkStream networkStream = socketForServer.GetStream();
-            System.IO.StreamReader streamReader =new System.IO.StreamReader(networkStream);
-            System.IO.StreamWriter streamWriter = new System.IO.StreamWriter(networkStream);
+           StreamReader streamReader =new StreamReader(networkStream);
+            StreamWriter streamWriter = new StreamWriter(networkStream);
             Console.WriteLine("This is client program who is connected to localhost on port No:10");
             try
             {              
@@ -53,7 +54,6 @@ namespace MulClient
 
         private static string GetData()
         {
-            //Ack from sql server
             return "ack";
         }
     }

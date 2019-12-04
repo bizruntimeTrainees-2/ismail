@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net.Sockets;
 using System.Threading;
+using  System.IO;
 
 namespace MultiClientServer
 {
@@ -16,8 +17,8 @@ namespace MultiClientServer
             {
                 Console.WriteLine("Client:" + socketForClient.RemoteEndPoint + " now connected to server.");
                 NetworkStream networkStream = new NetworkStream(socketForClient);
-                System.IO.StreamWriter streamWriter = new System.IO.StreamWriter(networkStream);
-                System.IO.StreamReader streamReader = new System.IO.StreamReader(networkStream);
+               StreamWriter streamWriter = new StreamWriter(networkStream);
+               StreamReader streamReader = new StreamReader(networkStream);
                 while (true)
                 {
                     string theString = streamReader.ReadLine();
