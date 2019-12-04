@@ -14,18 +14,19 @@ namespace MulClient
             }
             catch
             {
-                Console.WriteLine("Failed to connect to server");
+                Console.WriteLine(
+                "Failed to connect to server at {0}:999", "localhost");
                 return;
             }
 
             NetworkStream networkStream = socketForServer.GetStream();
-            System.IO.StreamReader streamReader =new System.IO.StreamReader(networkStream);
+            System.IO.StreamReader streamReader = new System.IO.StreamReader(networkStream);
             System.IO.StreamWriter streamWriter = new System.IO.StreamWriter(networkStream);
             Console.WriteLine("This is client program who is connected to localhost on port No:10");
             try
-            {              
-              {
-                  Console.WriteLine("type:");
+            {
+                {
+                    Console.WriteLine("type:");
                     string str = Console.ReadLine();
                     while (str != "exit")
                     {
@@ -38,14 +39,16 @@ namespace MulClient
                     {
                         streamWriter.WriteLine(str);
                         streamWriter.Flush();
+
                     }
+
                 }
             }
             catch
             {
                 Console.WriteLine("Exception reading from Server");
             }
-            
+
             networkStream.Close();
             Console.WriteLine("Press any key to exit from client program");
             Console.ReadKey();

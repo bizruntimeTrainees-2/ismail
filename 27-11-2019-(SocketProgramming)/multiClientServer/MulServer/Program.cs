@@ -16,10 +16,8 @@ namespace MultiClientServer
             {
                 Console.WriteLine("Client:" + socketForClient.RemoteEndPoint + " now connected to server.");
                 NetworkStream networkStream = new NetworkStream(socketForClient);
-                System.IO.StreamWriter streamWriter =
-                new System.IO.StreamWriter(networkStream);
-                System.IO.StreamReader streamReader =
-                new System.IO.StreamReader(networkStream);
+                System.IO.StreamWriter streamWriter = new System.IO.StreamWriter(networkStream);
+                System.IO.StreamReader streamReader = new System.IO.StreamReader(networkStream);
                 while (true)
                 {
                     string theString = streamReader.ReadLine();

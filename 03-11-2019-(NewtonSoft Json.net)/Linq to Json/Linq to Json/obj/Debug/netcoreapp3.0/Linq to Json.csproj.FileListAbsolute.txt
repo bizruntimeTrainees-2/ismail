@@ -1,0 +1,13 @@
+E:\C-sharp\Task2\Linq to Json\Linq to Json\bin\Debug\netcoreapp3.0\Linq to Json.exe
+E:\C-sharp\Task2\Linq to Json\Linq to Json\obj\Debug\netcoreapp3.0\Linq to Json.csprojAssemblyReference.cache
+E:\C-sharp\Task2\Linq to Json\Linq to Json\obj\Debug\netcoreapp3.0\Linq to Json.AssemblyInfoInputs.cache
+E:\C-sharp\Task2\Linq to Json\Linq to Json\obj\Debug\netcoreapp3.0\Linq to Json.AssemblyInfo.cs
+E:\C-sharp\Task2\Linq to Json\Linq to Json\bin\Debug\netcoreapp3.0\Linq to Json.deps.json
+E:\C-sharp\Task2\Linq to Json\Linq to Json\bin\Debug\netcoreapp3.0\Linq to Json.runtimeconfig.json
+E:\C-sharp\Task2\Linq to Json\Linq to Json\bin\Debug\netcoreapp3.0\Linq to Json.runtimeconfig.dev.json
+E:\C-sharp\Task2\Linq to Json\Linq to Json\bin\Debug\netcoreapp3.0\Linq to Json.dll
+E:\C-sharp\Task2\Linq to Json\Linq to Json\bin\Debug\netcoreapp3.0\Linq to Json.pdb
+E:\C-sharp\Task2\Linq to Json\Linq to Json\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+E:\C-sharp\Task2\Linq to Json\Linq to Json\obj\Debug\netcoreapp3.0\Linq to Json.csproj.CopyComplete
+E:\C-sharp\Task2\Linq to Json\Linq to Json\obj\Debug\netcoreapp3.0\Linq to Json.dll
+E:\C-sharp\Task2\Linq to Json\Linq to Json\obj\Debug\netcoreapp3.0\Linq to Json.pdb

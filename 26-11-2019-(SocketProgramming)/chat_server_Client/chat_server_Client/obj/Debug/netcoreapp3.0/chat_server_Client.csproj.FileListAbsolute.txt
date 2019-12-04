@@ -1,0 +1,11 @@
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\chat_server_Client\chat_server_Client\bin\Debug\netcoreapp3.0\chat_server_Client.exe
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\chat_server_Client\chat_server_Client\bin\Debug\netcoreapp3.0\chat_server_Client.deps.json
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\chat_server_Client\chat_server_Client\bin\Debug\netcoreapp3.0\chat_server_Client.runtimeconfig.json
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\chat_server_Client\chat_server_Client\bin\Debug\netcoreapp3.0\chat_server_Client.runtimeconfig.dev.json
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\chat_server_Client\chat_server_Client\bin\Debug\netcoreapp3.0\chat_server_Client.dll
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\chat_server_Client\chat_server_Client\bin\Debug\netcoreapp3.0\chat_server_Client.pdb
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\chat_server_Client\chat_server_Client\obj\Debug\netcoreapp3.0\chat_server_Client.csprojAssemblyReference.cache
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\chat_server_Client\chat_server_Client\obj\Debug\netcoreapp3.0\chat_server_Client.AssemblyInfoInputs.cache
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\chat_server_Client\chat_server_Client\obj\Debug\netcoreapp3.0\chat_server_Client.AssemblyInfo.cs
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\chat_server_Client\chat_server_Client\obj\Debug\netcoreapp3.0\chat_server_Client.dll
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\chat_server_Client\chat_server_Client\obj\Debug\netcoreapp3.0\chat_server_Client.pdb

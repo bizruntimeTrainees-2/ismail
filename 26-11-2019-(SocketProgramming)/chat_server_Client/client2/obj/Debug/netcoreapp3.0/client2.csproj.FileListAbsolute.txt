@@ -1,0 +1,10 @@
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\chat_server_Client\client2\bin\Debug\netcoreapp3.0\client2.exe
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\chat_server_Client\client2\bin\Debug\netcoreapp3.0\client2.deps.json
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\chat_server_Client\client2\bin\Debug\netcoreapp3.0\client2.runtimeconfig.json
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\chat_server_Client\client2\bin\Debug\netcoreapp3.0\client2.runtimeconfig.dev.json
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\chat_server_Client\client2\bin\Debug\netcoreapp3.0\client2.dll
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\chat_server_Client\client2\bin\Debug\netcoreapp3.0\client2.pdb
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\chat_server_Client\client2\obj\Debug\netcoreapp3.0\client2.AssemblyInfoInputs.cache
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\chat_server_Client\client2\obj\Debug\netcoreapp3.0\client2.AssemblyInfo.cs
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\chat_server_Client\client2\obj\Debug\netcoreapp3.0\client2.dll
+E:\gitFolder\ismail\26-11-2019-(SocketProgramming)\chat_server_Client\client2\obj\Debug\netcoreapp3.0\client2.pdb
