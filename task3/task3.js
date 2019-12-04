@@ -1,11 +1,12 @@
-
-function LoadData(){
-
-	fetch('company1.txt').then(function(response){
-		return response.text();
-	}).then(function(data)
-	{
-        var filedata = data;
+	
+$(document).ready(function(){
+	
+	$("#company1_data").click(function(){
+		$.ajax({
+			url:"finalEmp.csv",
+			dataType:"text",
+			success:function(data)
+			{
         var employee_data = data.split("\n");
         
         var table_data = '<table id="mytable" class="table table-hover">';
@@ -52,5 +53,9 @@ function LoadData(){
             $(this).parents('tr').remove();
         });
       
-	}); 
-}
+  
+			}
+
+		})
+	});
+});

@@ -63,15 +63,16 @@ function exportTableToCSV(filename) {
     </head>
  <body>
    <pre style="text-align: center;"> <h3>        Employee details receiving  from CSV file         </h3>   </pre>
-   <div>
-    <button onclick="exportTableToCSV('employees.csv')" class="btn-primary">Download As CSV File</button>
-   </div>
+  
 <div class="table-responsive">
     <div class="align-center">
-		
-		<button type="button"  id="company1_data" class="btn btn-primary" onclick="LoadData()">Load_data</button>&nbsp;&nbsp;
-	
-    </div><br/>
+	  	<pre>
+	 	                                                  <button type="button"  id="company1_data" class="btn btn-primary">Load_data</button>&nbsp;&nbsp;
+	  </pre>
+	   <div>
+    <button onclick="exportTableToCSV('employees.csv')" class="btn-primary">Download As CSV File</button>
+   </div><br/>
+    </div>
    
     <div class="container-fluid" id="employee_table" style="padding-top:30px; padding-left: 5px;padding-right: 5px;"></div>
    
