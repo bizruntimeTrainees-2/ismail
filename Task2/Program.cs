@@ -121,7 +121,6 @@ namespace EmployeeCreate
             while (k < 5)
             {
                 string[] empName = { "Ramesh", "Rani", "Bhavesh", "Bishnu", "Chethan" };
-
                 string[] compName = { "HP", "Lenovo", "Samsung", "Asus", "Acer" };
                 int[] compid = { 10, 20, 30, 40, 50 };
                 int j = 0;
