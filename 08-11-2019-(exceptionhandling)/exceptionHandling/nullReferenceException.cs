@@ -5,8 +5,6 @@ public class E4
     {
         try
         {
-          
-		  
 			String s = null;
 			Console.WriteLine(s.Length);
             Console.WriteLine("from try block"); // this stmt won't execute
@@ -14,11 +12,11 @@ public class E4
 		
         catch (NullReferenceException ex)
         {
-            Console.WriteLine("exception handle here : " + ex);
+                         Console.WriteLine("exception handle here : " + ex);
         }
 		finally
 		{
-          Console.WriteLine("last stmt from finally");
+                          Console.WriteLine("last stmt from finally");
 		}
     }
 }

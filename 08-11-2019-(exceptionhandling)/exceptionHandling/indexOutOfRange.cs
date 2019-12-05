@@ -16,7 +16,7 @@ public class E2
         }
 		finally
 		{
-          Console.WriteLine("last stmt from finally");
+                   Console.WriteLine("last stmt from finally");
 		}
     }
 }

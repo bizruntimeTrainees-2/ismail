@@ -13,11 +13,11 @@ public class E3
 		
         catch (InvalidCastException ex)
         {
-            Console.WriteLine("exception handle here : " + ex);
+                     Console.WriteLine("exception handle here : " + ex);
         }
 		finally
 		{
-          Console.WriteLine("last stmt from finally");
+                     Console.WriteLine("last stmt from finally");
 		}
     }
 }
