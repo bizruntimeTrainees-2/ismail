@@ -9,7 +9,7 @@ $(function(){
   });
 });
 
-function SendRequest()
+function Get()
 {
   var text = document.getElementById("text");
   var data='?';
@@ -76,6 +76,7 @@ function PostFormData()
          }
       }
   var  xhr = new XMLHttpRequest();
+      xhr.withCredentials = true;
   xhr.onreadystatechange=function(){
     if(xhr.status==200&& xhr.readyState==4)
     {
@@ -94,6 +95,7 @@ function Put()
 {
   var datapu = document.getElementById("put");
   var  xhr = new XMLHttpRequest();
+      xhr.withCredentials = true;
   xhr.onreadystatechange=function(){
     if(xhr.status==200 && xhr.readyState==4)
     {
@@ -113,6 +115,7 @@ function Patch()
 {
   var datapa = document.getElementById("patch");
   var  xhr = new XMLHttpRequest();
+      xhr.withCredentials = true;
   xhr.onreadystatechange=function(){
     if(xhr.status==200 && xhr.readyState==4)
     {
@@ -145,6 +148,7 @@ function RequestHeader()
 {
   var req = document.getElementById("req");
   var  xhr = new XMLHttpRequest();
+   xhr.withCredentials = true;
   xhr.onreadystatechange=function(){
     if(xhr.status==200&& xhr.readyState==4)
     {

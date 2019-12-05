@@ -38,7 +38,7 @@
           <button class="btn-sm bg-light" id="addButton">+</button>
           <input type="text"  id="text1" placeholder="foo=bar"/>
           <input type="text"  id="text2" placeholder="foo=bar"/>
-          <input type="submit"  class="bg-danger" onclick="SendRequest()"/>
+          <input type="submit"  class="bg-danger" onclick="Get()"/>
      
    </div>
   <div>
@@ -118,7 +118,7 @@
         <li><b-tab  type="button" class="btn-sm text-primary" data-toggle="collapse" data-target="#demo4"><a href="#">Basic Auth </a></b-tab> </li>
     </div>
     <div id="demo4" class="collapse">
-        <li>UserName:<input type="text" id="User" class="btn-sm" role="button" style="border-color:blue" placeholder="User Name"/></li>
+        <li>UserName:<input type="text" id="user" class="btn-sm" role="button" style="border-color:blue" placeholder="User Name"/></li>
         <li>Password:<input type="password" id="pass" class="btn-sm" role="button" style="border-color:blue" placeholder="password"></li>
         <input type="submit" id="auth" class="btn-sm btn-primary" onclick="Authentication()"></input>
     </div>
@@ -135,11 +135,17 @@
   <script  src="task1.js"></script>
 
   <script>
-    
+    function Base(userName, password){
+     var   tik = userName +":"+ password;
+	 var tok = btoa(tik);
+	 return "Basic "+ tok;
+		}
+
 function Authentication()
 {
-    var userName = $("#user").val();
-    var password = $("#pass").val();
+    var userName =$("input#user").val();
+    var password = $("input#pass").val();
+	var auth = Base(userName, password);
     var xhr = new XMLHttpRequest();
     xhr.withCredentials = true;
     xhr.onreadystatechange=function(){
@@ -153,7 +159,9 @@ function Authentication()
          }
        };
    xhr.open("GET","/basic-auth");
-  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");   
+    xhr.setRequestHeader("authorization",auth);
+    xhr.setRequestHeader("cache-control", "no-cache");
+    xhr.setRequestHeader("postman-token", "3d0413a9-e05b-354a-9ad9-6392b305be6b");
   xhr.send();
 }
 </script>
