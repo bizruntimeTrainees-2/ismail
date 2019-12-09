@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.1.0/rxjs.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.5.3/rxjs.umd.min.js.map" integrity="undefined" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.map" integrity="undefined" crossorigin="anonymous"></script>
+
+
+<script>
+const source = rxjs.of(null, '',undefined,7,0, 'foo', 69);
+//of-returns an observable which immediately emits whatever values are supplied to of()
+const result = source.pipe(
+  rxjs.operators.first(Boolean)
+);
+result.subscribe(data => console.log(data));
+
+
+var observable=rxjs.Observable.create((observer)=>{
+observer.next("helo")
+});
+var observable1=rxjs.Observable.create((observer)=>{
+observer.next("H r u")
+});
+
+var newObs=rxjs.merge(observable,observable1);
+newObs.subscribe((x)=>addItem(x))
+
+function addItem(val){
+var node=document.createElement("li");
+var textnode=document.createTextNode(val);
+node.appendChild(textnode);
+console.log(node);
+<!-- document.getElementById("output").appendChild(node); -->
+}
+</script>
+<title>Page Title</title>
+</head>
+<body>
+<div id="data">sdsddsds</div>
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>

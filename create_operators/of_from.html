@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.1.0/rxjs.umd.js"></script>
+
+<script>
+const source$ = rxjs.of({name: 'Bindu'},[1,2,3], function hello(){ return "hello"});
+const subscribe = source$.subscribe(val => console.log(val));
+
+const arraySource$ = rxjs.from([1,2,[3,4],() => console.log("foo"),'5',6]);
+const arraysubscribe = arraySource$.subscribe(val => console.log(val));
+</script>
+  <title>Document</title>
+ </head>
+ <body>
+  <div>Example of of  and from</div>
+ </body>
+</html>

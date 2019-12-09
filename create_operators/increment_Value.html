@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.1.0/rxjs.umd.js"></script>
+
+<script>
+const evenNumbers = rxjs.Observable.create(observer => {
+	let value = 0;
+	const interval = setInterval(() => {
+		if (value % 2 === 0)
+		{
+			observer.next(value)
+		}
+		value++;
+		console.log('even values after 1s')
+		},1000)
+		return () => clearInterval(interval)
+})
+const subscribe = evenNumbers.subscribe(val => console.log(val))
+
+setTimeout (() => {
+	subscribe.unsubscribe()
+	}, 10000);
+
+</script>
+  <title>Document</title>
+ </head>
+ <body>
+  <div>Example of increasing values</div>
+ </body>
+</html>

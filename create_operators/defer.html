@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.1.0/rxjs.umd.js"></script>
+
+  <script>
+const clicksOrInterval$ = rxjs.defer(function () {
+  if( Math.random() > 0.5){
+	  return rxjs.fromEvent(document, 'click')
+	  }else
+	  {
+		  return rxjs.interval(1000);
+		  }
+});
+ var d1 = clicksOrInterval$.subscribe(x => console.log(x));
+
+
+setTimeout(() => {
+	d1.unsubscribe()}, 5000);
+
+  const interval$ = rxjs.interval(1000 ) 
+  var  results = interval$.pipe(
+  rxjs.operators.mergeMap(x => x%2 === 1 ? rxjs.of('a', 'b','c') : rxjs.empty() 
+  ))
+ 
+var subscription3 =results.subscribe(x => console.log(x));
+
+setTimeout(() => {
+	subscription3.unsubscribe()}, 5000);
+  </script>
+ </head>
+ <body>
+  
+ </body>
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.1.0/rxjs.umd.js"></script>
+
+  <script>
+  const interval$ = rxjs.interval(1000 ) 
+  var  results = interval$.pipe(
+  rxjs.operators.mergeMap(x => x === 3 ? rxjs.throw('three are bad') : rxjs.of('a', 'b','c')
+  ))
+ 
+var subscription =results.subscribe(x => console.log(x), e => console.log(e));
+
+setTimeout(() => {
+	subscription.unsubscribe()}, 5000);
+  </script>
+ </head>
+ <body>
+  
+ </body>
+</html>

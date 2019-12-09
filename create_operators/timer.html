@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.1.0/rxjs.umd.js"></script>
+
+<script>
+const timer$ = rxjs.timer(0, 1000)
+const subscription = timer$.subscribe(val => console.log(val))
+
+setTimeout(() => {
+	subscription.unsubscribe()}, 5000);
+
+const timer1$ = rxjs.interval(1000);
+const subscription1 = timer1$.subscribe( val => console.log(val))
+
+setTimeout(() => {
+	subscription1.unsubscribe()}, 5000);
+
+const timer2$ = rxjs.range(1, 9);
+const subscription2 = timer2$.subscribe( val => console.log(val))
+
+setTimeout(() => {
+subscription2.unsubscribe()}, 5000);
+
+const timer3$ = rxjs.range(1, 9).pipe(
+rxjs.operators.take(4),
+rxjs.operators.repeat(3)
+)
+const subscription3 = timer3$.subscribe( val => console.log(val))
+
+setTimeout(() => {
+	subscription3.unsubscribe()}, 5000);
+
+
+</script>
+  <title>Document</title>
+ </head>
+ <body>
+  <div>Example of timer </div>
+ </body>
+</html>

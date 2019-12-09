@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.1.0/rxjs.umd.js"></script>
+
+<script>
+const mouseClick$ = rxjs.fromEvent(document,'click');
+const subscription1 = mouseClick$.subscribe(ev => 
+console.log('[1] screenX:' +ev.screenX +' screenY: ' +ev.screenY  ))
+
+const subscription2 = mouseClick$.subscribe(ev => 
+console.log('[2] screenX:' +ev.screenX +' screenY: ' +ev.screenY  ));
+
+setTimeout (() => subscription1.unsubscribe(),2000); 
+</script>
+  <title>Document</title>
+ </head>
+ <body>
+  <div>Example of mouse event</div>
+ </body>
+</html>

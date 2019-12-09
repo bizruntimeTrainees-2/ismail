@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.1.0/rxjs.umd.js"></script>
+
+<script>
+const myPromise = (willRejected)=> {
+	return new Promise((resolve, reject)=>
+	{
+		setTimeout (() => {
+			if (willRejected)
+			{
+				reject('rejected');
+			}
+			resolve('resolved');
+			}, 3000)
+		})
+	}
+	const souce$ = rxjs.of(true, false);
+	const example$  = souce$.pipe(
+	rxjs.operators.mergeMap( val =>
+	rxjs.from(myPromise(val))
+	.pipe(rxjs.operators.catchError(err => rxjs.of('Error: '+ err)) )
+	) 
+	)
+
+	const subscribe = example$.subscribe(
+	val => {console.log(val)},
+	err => {console.log(val)},
+	() => {console.log("All done")}
+	)
+</script>
+  <title>Document</title>
+ </head>
+ <body>
+  <div>Example of of  and from</div>
+ </body>
+</html>
