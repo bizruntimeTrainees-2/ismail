@@ -1,13 +1,8 @@
-import { ajax } from 'rxjs/ajax';
-import { map, catchError } from 'rxjs/operators';
-import { of } from 'rxjs';
 
+var md = rxjs.Observable.fromEvent(document, 'mousedown').map(true);
+var mu = rxjs.Observable.fromEvent(document, 'mouseup').map(false);
 
-
-var md = Rx.Observable.fromEvent(document, 'mousedown').map(true);
-var mu = Rx.Observable.fromEvent(document, 'mouseup').map(false);
-
-var source = Rx.Observable.range(1, 3)
+var source = rxjs.Observable.range(1, 3)
     .select(function (x, idx, obs) {
         return x * x;
     });
@@ -18,8 +13,8 @@ var subscription = source.subscribe(
     function () { console.log('Completed'); });
 
 
-var source = Rx.Observable.defer(function () {
-    return Rx.Observable.return(42);
+var source = rxjs.Observable.defer(function () {
+    return rxjs.Observable.return(42);
 });
 
 var subscription = source.subscribe(
@@ -28,7 +23,7 @@ var subscription = source.subscribe(
     function () { console.log('Completed'); } );
 
 
-const obs$ = ajax.getJSON(`https://postman-echo.com`).pipe(
+const obs$ = rxjs.ajax.getJSON(`https://postman-echo.com`).pipe(
   map(userResponse => console.log('users: ', userResponse)),
   catchError(error => {
     console.log('error: ', error);
@@ -36,7 +31,7 @@ const obs$ = ajax.getJSON(`https://postman-echo.com`).pipe(
   })
 );
 
-const users = ajax({
+const users = rxjs.ajax({
   url: 'https://postman-echo.com',
   method: 'POST',
   headers: {
