@@ -1,12 +1,13 @@
 using System;
-namespace Class{
 using System.Collections.Generic;
 using System.Collections;
 using System.Linq;
-public class Linqs
+namespace Class
 {
-	public static void Main(){
-  IList<Student> studentList = new List<Student>() { 
+  public class Linqs
+{
+	public static void Main(string[] args){
+              IList<Student> studentList = new List<Student>() { 
 				new Student() { StudentID = 1, StudentName = "John", Age = 18, StandardID = 1 } ,
 				new Student() { StudentID = 2, StudentName = "Steve",  Age = 21, StandardID = 1 } ,
 				new Student() { StudentID = 3, StudentName = "Bill",  Age = 18, StandardID = 2 } ,
@@ -26,20 +27,33 @@ public class Linqs
                                 (std, studentsGroup) => new // resultSelector 
                                 {
                                     students = studentsGroup,
-                                    StandarFulldName = std.StandardName
+                                    StandardFullName = std.StandardName
                                 });
+       foreach (var item in groupJoin)
+		{ 
+			Console.WriteLine(item.StandardFullName );
+		}
 
-		foreach (var item in groupJoin)
-		{ 
-			Console.WriteLine(item.StandarFulldName );
-			foreach (var str in item.StandarFulldName)
-		{ 
-			Console.WriteLine(str);
-						
-		}
-		}
+       bool areAllStudentsTeenAger = studentList.All(s => s.Age > 12 && s.Age < 20);
+       Console.WriteLine(areAllStudentsTeenAger);
+
+       bool isAnyStudentTeenAger = studentList.Any(s => s.Age > 12 && s.Age < 20);
+		Console.WriteLine(isAnyStudentTeenAger);
+
+        int SumOfStudentsAge = studentList.Aggregate<Student, int>(0,  (totalAge, s) => totalAge += s.Age  );
+		Console.WriteLine(SumOfStudentsAge);
+
+        var avgAge = studentList.Average(s => s.Age);
+		Console.WriteLine("Average Age of Student: {0}", avgAge);
+
+        var adultStudents = studentList.Count(s => s.Age >= 18);
+		Console.WriteLine("Number of Adult Students: {0}", adultStudents );
+        
+        var oldest = studentList.Max(s => s.Age);
+ 		Console.WriteLine("Oldest Student Age: {0}", oldest);
 		
-}
+		
+     }
 }
 public class Student{
 
@@ -53,5 +67,5 @@ public class Standard{
 
 	public int StandardID { get; set; }
 	public string StandardName { get; set; }
-}
+  }
 }
