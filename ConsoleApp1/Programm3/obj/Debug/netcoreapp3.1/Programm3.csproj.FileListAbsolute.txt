@@ -1,0 +1,17 @@
+E:\ADO.Net\ConsoleApp1\Programm3\bin\Debug\netcoreapp3.1\Programm3.exe
+E:\ADO.Net\ConsoleApp1\Programm3\obj\Debug\netcoreapp3.1\Programm3.AssemblyInfoInputs.cache
+E:\ADO.Net\ConsoleApp1\Programm3\obj\Debug\netcoreapp3.1\Programm3.AssemblyInfo.cs
+E:\ADO.Net\ConsoleApp1\Programm3\bin\Debug\netcoreapp3.1\Programm3.deps.json
+E:\ADO.Net\ConsoleApp1\Programm3\bin\Debug\netcoreapp3.1\Programm3.runtimeconfig.json
+E:\ADO.Net\ConsoleApp1\Programm3\bin\Debug\netcoreapp3.1\Programm3.runtimeconfig.dev.json
+E:\ADO.Net\ConsoleApp1\Programm3\bin\Debug\netcoreapp3.1\Programm3.dll
+E:\ADO.Net\ConsoleApp1\Programm3\bin\Debug\netcoreapp3.1\Programm3.pdb
+E:\ADO.Net\ConsoleApp1\Programm3\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+E:\ADO.Net\ConsoleApp1\Programm3\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+E:\ADO.Net\ConsoleApp1\Programm3\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+E:\ADO.Net\ConsoleApp1\Programm3\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+E:\ADO.Net\ConsoleApp1\Programm3\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\ADO.Net\ConsoleApp1\Programm3\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\ADO.Net\ConsoleApp1\Programm3\obj\Debug\netcoreapp3.1\Programm3.csproj.CopyComplete
+E:\ADO.Net\ConsoleApp1\Programm3\obj\Debug\netcoreapp3.1\Programm3.dll
+E:\ADO.Net\ConsoleApp1\Programm3\obj\Debug\netcoreapp3.1\Programm3.pdb

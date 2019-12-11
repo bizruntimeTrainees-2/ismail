@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{10127DDF-B259-4BBA-84A0-3EDA76F150FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Programm2", "Programm2\Programm2.csproj", "{F4CA70C8-F800-45B0-B103-7A92086B1A88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Programm3", "Programm3\Programm3.csproj", "{DA2BFAD0-EEC9-43D7-88FF-9151A6F7C822}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10127DDF-B259-4BBA-84A0-3EDA76F150FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10127DDF-B259-4BBA-84A0-3EDA76F150FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10127DDF-B259-4BBA-84A0-3EDA76F150FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10127DDF-B259-4BBA-84A0-3EDA76F150FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4CA70C8-F800-45B0-B103-7A92086B1A88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4CA70C8-F800-45B0-B103-7A92086B1A88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4CA70C8-F800-45B0-B103-7A92086B1A88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4CA70C8-F800-45B0-B103-7A92086B1A88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA2BFAD0-EEC9-43D7-88FF-9151A6F7C822}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA2BFAD0-EEC9-43D7-88FF-9151A6F7C822}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA2BFAD0-EEC9-43D7-88FF-9151A6F7C822}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA2BFAD0-EEC9-43D7-88FF-9151A6F7C822}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5CDA200A-B688-4099-9902-6578D912C706}
+	EndGlobalSection
+EndGlobal
