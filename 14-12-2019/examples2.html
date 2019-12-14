@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <script src="https://unpkg.com/@reactivex/rxjs@5.3.0/dist/global/Rx.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.1.0/rxjs.umd.js"></script>
+
+  <title>Document</title>
+  <script src="example.js"></script>
+ </head>
+ <body>
+  <input type="text" ><br/>
+ 
+ </body>
+ <script>
+
+/*
+var input = document.querySelector('input');
+var observable = Rx.Observable.fromEvent(input, 'input');
+
+observable
+.subscribe({
+	next: function(event) {
+  	console.log(event.target.value);
+  }
+});
+*/
+
+
+
+var input = document.querySelector('input');
+var observable = Rx.Observable.fromEvent(input, 'input');
+
+observable
+//pluck ->target: gives target of the event, value: as many arg  we want  to extract
+.pluck('target', 'value')
+.debounceTime(500)
+.distinctUntilChanged()
+.subscribe({
+	next: function(value) {
+  	console.log(value);
+  }
+});
+
+
+
+ </script>
+</html>

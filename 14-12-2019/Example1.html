@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <script src="https://unpkg.com/@reactivex/rxjs@5.3.0/dist/global/Rx.js"></script>
+
+  <title>Document</title>
+  <script src="example.js"></script>
+ </head>
+ <body>
+  <input type="text" id="input1"><br/>
+  <input type="text" id="input2">
+<p>Combined value: <span id="span"></span></p>
+ </body>
+ <script>
+var input1 = document.querySelector('#input1');
+var input2 = document.querySelector('#input2');
+
+var span = document.querySelector('span');
+
+var obs1 = Rx.Observable.fromEvent(input1, 'input');
+var obs2 = Rx.Observable.fromEvent(input2, 'input');
+
+obs1.mergeMap(
+	event1 => {
+  	return obs2.map(
+    	event2 => event1.target.value + ' ' + event2.target.value
+    )
+  }
+).subscribe(
+	combinedValue => span.textContent = combinedValue
+);
+
+var input = document.querySelector('#input1');
+var observable = Rx.Observable.fromEvent(input, 'input');
+
+observable
+//pluck ->target: gives target of the event, value: as many arg  we want  to extract
+.pluck('target', 'value', 'value')
+.debounceTime(500)
+.distinctUntilChanged()
+.subscribe({
+	next: function(value) {
+  	console.log(value);
+  }
+});
+
+ </script>
+</html>
