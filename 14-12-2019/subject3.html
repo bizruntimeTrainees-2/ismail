@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <script src="https://unpkg.com/@reactivex/rxjs@5.3.0/dist/global/Rx.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.1.0/rxjs.umd.js"></script>
+
+  <title>Rxjs Subject example</title>
+ </head>
+ <body>
+ </body>
+ <script>
+const source = rxjs.interval(500);
+const subject = new rxjs.Subject();
+const refCounted = source.pipe(rxjs.operators.multicast(subject), rxjs.operators.refCount());
+let subscription1, subscription2
+
+console.log('observerA subscribed');
+subscription1 = refCounted.subscribe({
+	next: val => console.log("observerA:",val)
+});
+
+setTimeout( () => {
+	subscription2 = refCounted.subscribe({
+	next: val => console.log("observerB:",val)
+});
+}, 1500);
+
+setTimeout(() => {
+	 console.log('observerB unsubscribed');
+	subscription2.unsubscribe()
+},5000)
+setTimeout(() => {
+	 console.log('observerA unsubscribed');
+	subscription1.unsubscribe();
+},6000)
+ </script>
+</html>

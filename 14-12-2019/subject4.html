@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <script src="https://unpkg.com/@reactivex/rxjs@5.3.0/dist/global/Rx.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.1.0/rxjs.umd.js"></script>
+
+  <title>Rxjs Subject example</title>
+ </head>
+ <body>
+ </body>
+ <script>
+const subject = new rxjs.BehaviorSubject(0); // 0 is the initial value
+ 
+subject.subscribe({
+  next: (v) => console.log(`observerA: ${v}`)
+});
+ 
+subject.next(1);
+subject.next(2);
+ 
+subject.subscribe({
+  next: (v) => console.log(`observerB: ${v}`)
+});
+ 
+subject.next(3);
+ </script>
+</html>

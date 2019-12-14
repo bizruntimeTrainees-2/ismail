@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <script src="https://unpkg.com/@reactivex/rxjs@5.3.0/dist/global/Rx.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.1.0/rxjs.umd.js"></script>
+
+  <title>Rxjs Subject example</title>
+ </head>
+ <body>
+ </body>
+ <script>
+const source = rxjs.interval(500);
+const subject = new rxjs.Subject();
+const multicasted = source.pipe(rxjs.operators.multicast(subject));
+let subscription1, subscription2, subscriptionConnect;
+
+subscription1 = multicasted.subscribe({
+	next: val => console.log("observerA:",val)
+});
+subscriptionConnect = multicasted.connect();
+
+setTimeout( () => {
+	subscription2 = multicasted.subscribe({
+	next: val => console.log("observerB:",val)
+});
+}, 1500);
+
+setTimeout(() => {
+	subscription2.unsubscribe()
+},5000)
+setTimeout(() => {
+	subscription1.unsubscribe();
+	 subscriptionConnect.unsubscribe(); // for the shared Observable execution
+},6000)
+ </script>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <script src="https://unpkg.com/@reactivex/rxjs@5.3.0/dist/global/Rx.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.1.0/rxjs.umd.js"></script>
+
+  <title>Rxjs Subject example</title>
+ </head>
+ <body>
+ </body>
+ <script>
+const subject = new rxjs.ReplaySubject(3); // buffer 3 values for new subscribers
+ 
+subject.subscribe({
+  next: (v) => console.log(`observerA: ${v}`)
+});
+ 
+subject.next(1);
+subject.next(2);
+subject.next(3);
+subject.next(4);
+ 
+subject.subscribe({
+  next: (v) => console.log(`observerB: ${v}`)
+});
+ subject.next(5);
+subject.next(6);
+ </script>
+</html>
