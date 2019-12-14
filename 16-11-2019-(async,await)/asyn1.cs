@@ -7,14 +7,14 @@ public class Class1
     {
         GetTodayInfo().Wait();
     }
-     static async Task GetTodayInfo()
+    static async Task GetTodayInfo()
     {
         await WaitAndApology();
-       Console.WriteLine("Today is :"+DateTime.Today + 
-           "\n Today time is: " + DateTime.Now.TimeOfDay);
-        
+        Console.WriteLine("Today is :" + DateTime.Today +Environment.NewLine+
+            "Today time is: " + DateTime.Now.TimeOfDay);
+
     }
-    static async  Task  WaitAndApology()
+    static async Task WaitAndApology()
     {
         await Task.Delay(2000);
         Console.WriteLine("Sory for the delay");

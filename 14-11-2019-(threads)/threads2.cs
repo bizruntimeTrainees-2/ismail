@@ -9,9 +9,9 @@ public class Threads
 	
 		Thread th = new Thread(ExecuteInForeground);
 		th.Start();
-		Thread.Sleep(10);
+		Thread.Sleep(1000);
 		
-			Console.WriteLine("from Main thread: "+Thread.CurrentThread.ManagedThreadId);
+	    Console.WriteLine("from Main thread: "+Thread.CurrentThread.ManagedThreadId);
 			
 		Console.WriteLine("main thread ends.");
 	}

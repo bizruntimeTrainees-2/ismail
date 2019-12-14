@@ -2,7 +2,7 @@ using System;
 using System.Threading;
 
 
-public class T
+public class ThreadExample
 {
 	public static void T1()
 	{
@@ -20,9 +20,7 @@ public class T
 		for(int i=50; i< 55; i++)
 		{
 			Console.WriteLine("from Main thread: "+i);
-		}
-		
-		
+		}				
 		Console.WriteLine("main thread ends.");
 	}
 }

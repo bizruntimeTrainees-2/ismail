@@ -10,17 +10,17 @@ public class Class1
     {
         Console.WriteLine(GetTodayInfo().Result);
     }
-     static async Task<string> GetTodayInfo()
+    static async Task<string> GetTodayInfo()
     {
-        string  str =  "Today is :"+DateTime.Today + " " + DateTime.Now.TimeOfDay +"Today hours of leisture:" + await GetLeistureHours();
+        string str = "Today is :" + DateTime.Today + " " + DateTime.Now.TimeOfDay + "Today hours of leisture:" + await GetLeistureHours();
         return str;
     }
-    static async  Task<int> GetLeistureHours()
+    static async Task<int> GetLeistureHours()
     {
         var date = await Task.FromResult<string>(DateTime.Now.DayOfWeek.ToString());
 
         int hours;
-        if (date.First() == 'S')
+        if (date.First() == 1)
         {
             hours = 16;
         }

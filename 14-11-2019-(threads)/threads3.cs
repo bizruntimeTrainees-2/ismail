@@ -8,7 +8,7 @@ public class Threads
 	
 		Thread th = new Thread(ExecuteInForeground);
 		th.Start(5000);
-		Thread.Sleep(10);
+		Thread.Sleep(1000);
 		
 			Console.WriteLine("from Main thread: "+Thread.CurrentThread.ManagedThreadId);
 			

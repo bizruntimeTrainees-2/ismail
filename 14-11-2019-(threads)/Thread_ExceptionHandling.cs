@@ -1,7 +1,7 @@
 using System;
 using System.Threading;
 using System.Diagnostics;
-public class T
+public class ThreadExample
 {
 	
 	public static void Main(string[] args)
@@ -11,7 +11,7 @@ public class T
 		th.Start(5000);
 		Thread.Sleep(10);
 		
-			Console.WriteLine("from Main thread: "+Thread.CurrentThread.ManagedThreadId);
+	    Console.WriteLine("from Main thread: "+Thread.CurrentThread.ManagedThreadId);
 			
 		Console.WriteLine("main thread ends.");
 	}
@@ -28,8 +28,8 @@ public class T
 			time = 5000;
 		}
 		Console.WriteLine("foreground thread status: "+Thread.CurrentThread.ManagedThreadId+" "+
-						 Thread.CurrentThread.ThreadState+" "+
-						 Thread.CurrentThread.Priority);
+														Thread.CurrentThread.ThreadState+" "+
+														Thread.CurrentThread.Priority);
 	}
 }
 

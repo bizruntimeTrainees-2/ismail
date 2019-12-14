@@ -14,7 +14,7 @@ public class Threads
 	public static void Main(string[] args)
 	{
 		Console.WriteLine("Main thread start:");
-		Thread t = new Thread(new ThreadStart(Thread11));
+		Thread t = new Thread(new ThreadStart(Thread1));
 		t.Start();
 		t.Join();
 		for(int i=50; i< 55; i++)

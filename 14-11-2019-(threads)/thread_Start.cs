@@ -14,7 +14,7 @@ public class MyThread
 }  
 public class Threads  
 {  
-    public static void Main()  
+    public static void Main(string[] args)  
     {  
         Thread t1 = new Thread(new ThreadStart(MyThread.Thread1));  
         Thread t2 = new Thread(new ThreadStart(new MyThread().Thread2));  

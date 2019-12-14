@@ -1,31 +1,34 @@
 ﻿using System;
+using System.Linq;
 using System.Threading;
+using System.Threading.Tasks;
+
 public class Class1
 {
-	public static void Main()
+    public static void Main()
     {
-        int[] array = Enumerable.Range(1, 500).ToArray();
+        int[] array = Enumerable.Range(1, 100).ToArray();
         var cts = new CancellationTokenSource();
 
         Task.Factory.StartNew(() => {
             UserClickedTheCancellationButton(cts);
-            });
+        });
         double[] results = null;
         try
         {
             results = (from num in array.AsParallel().WithCancellation(cts.Token)
                        where num % 2 != 0
-                       select Function(num, cts.Token)).ToArray();
+                       select Method(num, cts.Token)).ToArray();
         }
-        catch(OperationCanceledException e)
+        catch (OperationCanceledException e)
         {
             Console.WriteLine(e.Message);
         }
-        catch(AggregateException ae)
+        catch (AggregateException ae)
         {
-            if(ae.InnerExceptions != 0)
+            if (ae.InnerExceptions != null)
             {
-                foreach(var s in ae.InnerExceptions)
+                foreach (var s in ae.InnerExceptions)
                 {
                     Console.WriteLine(s.Message);
                 }
@@ -36,21 +39,21 @@ public class Class1
         {
             cts.Dispose();
         }
-           if(results != null)
+        if (results != null)
         {
-            foreach(var s in results)
+            foreach (var s in results)
             {
-                Console.WriteLine(s.ToString);
+                Console.WriteLine(s.ToString());
             }
         }
         Console.WriteLine();
         Console.ReadKey();
     }
-    static double Function(int n, CancellationToken ct)
+    static double Method(int n, CancellationToken ct)
     {
-        for(int i=0; i < 5; i++)
+        for (int i = 0; i < 5; i++)
         {
-            Thread.SpinWait(50000);
+            Thread.SpinWait(5000);
             ct.ThrowIfCancellationRequested();
         }
         return Math.Sqrt(n);
@@ -60,9 +63,17 @@ public class Class1
         Random ran = new Random();
         Thread.Sleep(ran.Next(150, 250));
         Console.WriteLine("press 'c' to cancle ");
-        if (Console.ReadKey().KeyChar == c)
+        try
         {
-            cts.Cancel();
+            if (Console.ReadKey().KeyChar == 'c' || Console.ReadKey().KeyChar == 'C')
+            {
+                cts.Cancel();
+            }
         }
+        catch(Exception e)
+        {
+            Console.WriteLine(e.ToString());
+        }
+       
     }
 }

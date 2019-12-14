@@ -5,7 +5,7 @@ using System.Linq;
 
 public class Class1
 {
-    public static async Task Main()
+    public static async Task Main(string[] args)
     {
         await Task.Run(() =>
         {
