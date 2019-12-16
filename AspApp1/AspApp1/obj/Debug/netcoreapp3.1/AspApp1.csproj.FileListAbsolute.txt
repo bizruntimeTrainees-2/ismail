@@ -1,0 +1,16 @@
+E:\ASP.Net\AspApp1\AspApp1\bin\Debug\netcoreapp3.1\appsettings.Development.json
+E:\ASP.Net\AspApp1\AspApp1\bin\Debug\netcoreapp3.1\appsettings.json
+E:\ASP.Net\AspApp1\AspApp1\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+E:\ASP.Net\AspApp1\AspApp1\bin\Debug\netcoreapp3.1\AspApp1.exe
+E:\ASP.Net\AspApp1\AspApp1\bin\Debug\netcoreapp3.1\AspApp1.deps.json
+E:\ASP.Net\AspApp1\AspApp1\bin\Debug\netcoreapp3.1\AspApp1.runtimeconfig.json
+E:\ASP.Net\AspApp1\AspApp1\bin\Debug\netcoreapp3.1\AspApp1.runtimeconfig.dev.json
+E:\ASP.Net\AspApp1\AspApp1\bin\Debug\netcoreapp3.1\AspApp1.dll
+E:\ASP.Net\AspApp1\AspApp1\bin\Debug\netcoreapp3.1\AspApp1.pdb
+E:\ASP.Net\AspApp1\AspApp1\obj\Debug\netcoreapp3.1\AspApp1.csprojAssemblyReference.cache
+E:\ASP.Net\AspApp1\AspApp1\obj\Debug\netcoreapp3.1\AspApp1.MvcApplicationPartsAssemblyInfo.cache
+E:\ASP.Net\AspApp1\AspApp1\obj\Debug\netcoreapp3.1\AspApp1.AssemblyInfoInputs.cache
+E:\ASP.Net\AspApp1\AspApp1\obj\Debug\netcoreapp3.1\AspApp1.AssemblyInfo.cs
+E:\ASP.Net\AspApp1\AspApp1\obj\Debug\netcoreapp3.1\AspApp1.RazorTargetAssemblyInfo.cache
+E:\ASP.Net\AspApp1\AspApp1\obj\Debug\netcoreapp3.1\AspApp1.dll
+E:\ASP.Net\AspApp1\AspApp1\obj\Debug\netcoreapp3.1\AspApp1.pdb
