@@ -1,0 +1,89 @@
+<!-- <mat-toolbar color="Accent">   
+  <mat-toolbar-row>
+    <span>First Row</span>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row>
+    <span>Second Row</span>
+  </mat-toolbar-row>
+</mat-toolbar> -->
+
+<!-- <mat-toolbar color="primary">
+  <span>Application Title</span>
+
+  
+  <span class="example-fill-remaining-space"></span>
+
+  <span>Right Aligned Text</span>
+</mat-toolbar> -->
+
+
+
+
+
+
+<mat-menu #appMenu="matMenu"xPosition="after" yPosition="above">
+  <button mat-menu-item [matMenuTriggerFor]="submenu" 
+  disableRipple>FrontEnd</button>
+  <button mat-menu-item>Backend</button>
+</mat-menu>
+
+<button mat-flat-button color="primary" disableRipple class="center"
+[matMenuTriggerFor]="appMenu">
+Menu</button>
+
+<mat-menu #submenu="matMenu">
+   <button mat-menu-item>Angular</button>
+   <button mat-menu-item>React</button>
+   <button mat-menu-item>Vue</button>
+</mat-menu>
+
+<mat-menu #lazyMenu="matMenu">
+   <ng-template matMenuContent let-name="name" let-hobby="hobby">
+      <button mat-menu-item>Settings</button>
+      <button mat-menu-item>hobby is {{hobby}} </button>
+      <button mat-menu-item>Log Out {{name}} </button>
+   </ng-template>
+</mat-menu>
+
+<button mat-raised-button disableRipple
+ [matMenuTriggerData]="{name: 'Hussain',hobby:'cricket'}" 
+ [matMenuTriggerFor]="lazyMenu">Ismail</button>
+<button mat-raised-button  disableRipple
+[matMenuTriggerData]="{name: 'Isreal',hobby:'chess'}" 
+ [matMenuTriggerFor]="lazyMenu">Pathan</button>
+
+
+
+
+
+
+
+
+<!-- <mat-toolbar color="primary" class="navbar">
+    <div>GreenLand</div>
+    <div>
+        <span>Home</span>
+        <span>About</span>
+        <span>Services</span>
+    </div>
+</mat-toolbar> -->
+
+<!--three possible modes are over,push,side-->
+<!-- <mat-sidenav-container>
+    <mat-sidenav #sidenav (opened)="log('opened')" (closed)="log('closed')"
+     mode='side' [(opened)]="opened">Sidenav</mat-sidenav>
+    <mat-sidenav-content>Main
+    <button (click)="opened= !opened">Toggle Opened</button>
+    <button (click)="sidenav.open()">Open</button>
+    <button (click)="sidenav.close()">Close</button>
+    <button (click)="sidenav.toggle()">Toggle</button>
+    </mat-sidenav-content>
+</mat-sidenav-container> -->
+
+
+
+
+
+
+

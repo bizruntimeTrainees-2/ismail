@@ -1,0 +1,28 @@
+button{
+    margin-right:2rem;
+}
+.navbar{
+    justify-content: space-between;
+}
+span{
+    padding-right:1rem;
+}
+
+.center{
+    margin:10rem;
+}
+
+.example-fill-remaining-space { 
+  flex: 1 1 auto;
+}
+
+mat-sidenav-container{
+    height:100%;
+}
+mat-sidenav, mat-sidenav-content{
+    padding: 16px;
+}
+mat-sidenav{
+    background-color: lightcoral;
+    width: 200px
+}
