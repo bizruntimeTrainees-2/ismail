@@ -1,0 +1,38 @@
+
+<form #form="ngForm" (submit)="onSubmit(form)" autocomplete="off">
+    <input type="hidden" name="employeeID" #employeeID="ngModel" [(ngModel)]="service.formData.employeeID"/>
+    <div class="form-group" >
+        <label>FULL NAME</label>
+        <input name="FullName" #FullName="ngModel" [(ngModel)]="service.formData.fullName" class="form-control" required/>
+        <span style="color: red;" class="validation-error" *ngIf="FullName.invalid && FullName.touched">
+            This field is required.
+        </span>
+    </div>
+    <div class="form-group">
+        <label>POSITION</label>
+        <input name="postion" #postion="ngModel" [(ngModel)]="service.formData.postion" class="form-control" required/>
+        <span style="color: red;" class="validation-error" *ngIf="postion.invalid && postion.touched">
+            This field is required.
+        </span>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>EMPCode</label>
+            <input name="EmpCode" #EmpCode="ngModel" [(ngModel)]="service.formData.EMPCode" class="form-control" maxlength="5" required/>
+            <span  style="color: red;" class="validation-error" *ngIf="EmpCode.invalid && EmpCode.touched">
+                This field is required.
+            </span>
+        </div>
+        <div class="form-group col-md-6">
+            <label>MOBILE</label>
+            <input name="MobileNo" #MobileNo="ngModel" [(ngModel)]="service.formData.mobileNo" class="form-control" minlength="10" maxlength="10" required/>
+            <span style="color: red;" class="validation-error" *ngIf="MobileNo.invalid && MobileNo.touched">
+                This field is required.
+            </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="submit"  [disabled]="form.invalid" class="btn btn-lg btn-block" >SUBMIT</button>
+    </div>
+    
+</form>

@@ -1,0 +1,14 @@
+<table class="table table-hover">
+    <tr>
+        <td><strong>EMPCode -- fullName </strong>  </td>
+        <td> <strong>position</strong> </td>
+        <td><strong>mobileNo</strong> </td>
+        <td> <strong>DELETE</strong> </td>
+    </tr>
+    <tr *ngFor="let emp of service.list">
+        <td (click)="populateForm(emp)" >[{{emp.EMPCode}}] -- {{emp.fullName}} </td>
+        <td (click)="populateForm(emp)"> {{emp.postion}} </td>
+        <td (click)="populateForm(emp)"> {{emp.mobileNo}} </td>
+        <td> <button (click)="onDelete(emp.employeeID)" class="btn btn-sm btn-outline-danger">X</button> </td>
+    </tr>
+</table>
